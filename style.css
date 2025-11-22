@@ -145,3 +145,38 @@ img {
   }
 }
 
+  .filter-container {
+    text-align: center;
+    margin-bottom: 15px;
+    font-family: 'Press Start 2P', sans-serif;
+    color: white;
+    font-size: 0.8rem;
+    display: flex; /* Helps align items */
+    justify-content: center;
+    align-items: center;
+  }
+
+  .filter-btn {
+    display: inline-block;
+    padding: 8px 12px;
+    margin: 0 6px;
+    /* border: 2px solid #ccc; */ /* <-- Removed border */
+    color: white;
+    cursor: pointer;
+    transition: all 0.2s ease; /* Smooth transition */
+    font-size: 0.7rem; /* Slightly smaller */
+    border-radius: 5px; /* <-- Added rounded corners */
+    /* Added scaled-down text shadow for the "border" effect */
+    text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black; 
+  }
+
+  /* Individual colors for the buttons */
+  /* Removed border-color from each */
+  #filter-all { background-color: #AD8DE0; } /* F-Tier Purple */
+  #filter-2024 { background-color: #7D964C; } /* C-Tier Green */
+  #filter-2025 { background-color: #6BD5DA; } /* D-Tier Blue */
+
+  /* Hover state - makes them slightly brighter */
+  #filter-all:hover { background-color: #cbb4ef; }
+  #filter-2024:hover { background-color: #a3b97b; }
+  #filter-2025:hover { background-color: #9ee4e7; }

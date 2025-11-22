@@ -19,7 +19,7 @@ function showSummary(image) {
 }
 
 // Function to add a new game card to the tier list
-function addGame(title, summary, imgTierList, imgSummaryCard, tier) {
+function addGame(title, summary, imgTierList, imgSummaryCard, tier, year) {
     let row;
     switch (tier.toUpperCase()) {
         case 'S':
@@ -59,8 +59,23 @@ function addGame(title, summary, imgTierList, imgSummaryCard, tier) {
     img.setAttribute('data-title', title);
     img.setAttribute('data-summary', summary);
     img.setAttribute('data-img', imgSummaryCard);
+    img.setAttribute('data-year', year)
     img.setAttribute('onclick', 'showSummary(this)');
 
     card.appendChild(img);
     row.appendChild(card);
+}
+
+function filterGames(year) {
+    const allGameImages = document.querySelectorAll('.games img');
+
+    allGameImages.forEach(gameImage => {
+        const card = gameImage.parentElement; 
+
+        if (year === 'all' || gameImage.dataset.year === year) {
+            card.style.display = 'inline-block'; 
+        } else {
+            card.style.display = 'none';
+        }
+    });
 }

@@ -8,10 +8,15 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
-        <title>Tyll's Game Tier List 2024</title>
+        <title>Tyll's Game Tier List</title>
     </head>
     <body>
-        <h1 id="title">Meine Spiele 2024</h1>
+        <h1 id="title">Meine Lieblingsspiele</h1>
+        <div class="filter-container">
+            <span id="filter-all" class="filter-btn" onclick="filterGames('all', this)">Alle</span>
+            <span id="filter-2024" class="filter-btn" onclick="filterGames('2024', this)">2024</span>
+            <span id="filter-2025" class="filter-btn" onclick="filterGames('2025', this)">2025</span>
+        </div>
         <div id="board" class="containers">
             <div class="row">
                 <div style="background-color:#FF3043" class="label">S</div>
