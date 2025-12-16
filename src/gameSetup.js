@@ -220,7 +220,7 @@ window.onload = function() {
 
     addGame(
         'Hollow Knight: Silksong',
-        'Ich hab Hollow Knight geliebt, Silksong hat mich leider nicht so gepackt. Visuell ist es fantastisch, die Musik ist super, aber das Gameplay hat mich nicht so gefesselt. Ich mochte Hornet als Charakter, aber irgendwie hat das Spiel mich nicht so gefesselt wie der erste Teil. Vielleicht spiel ichs nochmal irgendwann, aber aktuell hab ich kein Bedürfnis danach.',
+        'Die beste Enttäuschung, die ich je gespielt habe. Verdientes A-Tier, aber quasi jeder Aspekt des Games ist schlechter als der Vorgänger. Ich lobe, dass sie was neues probieren wollten, aber das Movement, die Gegner & Bosse, das Kampfsystem insgesamt, wirkt so... unfertig? Hollow Knight hat überzeugt mit simplen Mechanics, die man krass ausreizen konnte. Silksong will zu viel. Unterschiedliche Crests, die deine Moves komplett ändern und Tools, die super divers sind führen dazu, dass das Gameplay nicht maßgeschneidert für die Werkzeuge, die man der Spieler:in an die Hand bekommt gemacht wird. Die Spannbreite der Möglichkeiten verwässert das Gameplay. Das World Design war gut, dass Hornet redet und Charakter hat hab ich geschätzt, aber anders als Hollow Knight, dass ich direkt 3x durchgespielt hab, hab ich Silksong nach dem ersten Run weggelegt. Das klingt alles sehr negativ, aber es ist trotzdem ein fantastisches Game. Nur deutlicher Rückschritt von Hollow Knight.',
         'img/cover/silksong.png',
         'img/sum/silksong.png',
         'A',
@@ -229,7 +229,7 @@ window.onload = function() {
 
     addGame(
         'Peak',
-        'Ein super chilliges Kletterspiel. Hat mir spaß gemacht, die Levels zu meistern, aber es war nichts besonderes. Visuell war es schön, das Gameplay war okay. Insgesamt ein nettes Spiel für zwischendurch.',
+        'Absolute Peak. Ok, der Joke musste sein. Die prämisse ist simpel: Kletter mit deinen Friends auf nen Berg. Aber der Artstyle, die Atmo und vor allem das Push to Talk System bringen das auf so ein Level.',
         'img/cover/peak.png',
         'img/sum/peak.png',
         'B',
@@ -238,7 +238,7 @@ window.onload = function() {
 
     addGame(
         'Tony Hawk\'s Pro Skater 3+4',
-        'Hab die Remaster erst spät dieses Jahr gespielt, aber es hat mir spaß gemacht, die alten Levels wiederzusehen. Das Gameplay ist immer noch super, die Remaster haben das gut umgesetzt. Ich habs genossen, die Tricks zu machen und die Levels zu erkunden.',
+        'Kein Spiel in C hab ich länger gespielt. Aber es ist leider, trotz der Zeit, die ich investiert habe, nicht gut. Sie haben mit Skitchen eine neue Mechanic eingeführt, und die ist mega scuffed. Die Spine Transfers funktionieren häufig nicht und am schlimmsten: Der Karrieremodus aus THPS4 wurde entfernt. Die Levels und der Vibe haben mies daran gelitten. Egal ob in 2 oder 10 Minuten, die Level fühlen sich extrem leer und herzlos an. Die Missionen sind auch maximal halbherzig geportet worden. Es ist offensichtlich, dass mit möglichst wenig Aufwand möglichst viel Gewinn erzielt werden sollte. Schade. Spaß macht es zugegebenermaßen trotzdem.',
         'img/cover/thps34.png',
         'img/sum/thps34.png',
         'C',
@@ -247,7 +247,7 @@ window.onload = function() {
 
     addGame(
         'Beholder: Conductor',
-        'Ein interessantes Spiel, das mich aber nicht ganz gepackt hat. Die Idee, ein Überwachungsstaat zu simulieren, ist spannend, aber das Gameplay war etwas repetitiv. Ich mochte die Atmosphäre, aber es fehlte mir das gewisse Etwas, um mich wirklich zu fesseln.',
+        'Die Beholder Reihe ist mir mega ans Herz gewachsen. Hier probieren sie mal ein neues Setting aus, mit gewohnten Gameplay Konzepten. Es funktioniert klasse, man steigt im Zug auf und ist für zunehmend wichtigere Leute Schaffner. Genauso entwickeln sich die Stakes, das Pacing ist fantastisch. Die Story und Faschismus Analogien gewohnt stark für die Serie.',
         'img/cover/beholderconductor.png',
         'img/sum/beholderconductor.png',
         'B',
@@ -256,16 +256,16 @@ window.onload = function() {
 
     addGame(
         'Do No Harm',
-        'Ein medizinisches Simulationsspiel, das mich leider nicht überzeugen konnte. Die Mechaniken waren interessant, aber das Gameplay fühlte sich oft frustrierend an. Ich mochte die Idee, aber die Umsetzung ließ zu wünschen übrig.',
+        'Ich nenn so Games gerne "Papers Please Like", wo eine simple Gameplay Loop genommen wird und darum herum ne Story erzählt wird. Das hat Do No Harm perfekt gemacht, die Loop ist klasse, das Arztgame hat spaß gemacht, die Story selbst, bzw. wie um einen herum sich alles entwicklet war gut gezeigt. Der Artstyle und die Atmosphäre war auch super. Hat mir spaß gemacht, mein lieblings Lovecraft Game, dass ich dieses Jahr gespielt hab (Und das leider in B :/).',
         'img/cover/donoharm.png',
         'img/sum/donoharm.png',
-        'C',
+        'B',
         '2025'
     );
 
     addGame(
         'Class Of 09',
-        'Ein nostalgisches Spiel, das mich an meine Schulzeit erinnert hat. Die Mechaniken waren einfach, aber es hat Spaß gemacht, die verschiedenen Szenarien durchzuspielen. Es war eine nette Abwechslung, aber nichts, was ich lange im Gedächtnis behalten werde.',
+        'Ich weiß, die zwei Wörter sind extrem cringe, aber der dunkle Humor des Games landet perfekt! Ich hab es mal als White Girl Boondocks beschrieben gehört und das trifft es einfach perfekt. Nicole und Jecka sind ein super unterhaltsames Duo und der Humor ist das, was es besonders macht. Als jemand, der 2009 zur Schule ging und genau in die Alterszielgruppe des Games gehört hat es einfach krass gezündet.',
         'img/cover/classof09.png',
         'img/sum/classof09.png',
         'B',
@@ -274,7 +274,7 @@ window.onload = function() {
 
     addGame(
         'Class Of 09: The Re-Up',
-        'Ein nostalgisches Spiel, das mich an meine Schulzeit erinnert hat. Die Mechaniken waren einfach, aber es hat Spaß gemacht, die verschiedenen Szenarien durchzuspielen. Es war eine nette Abwechslung, aber nichts, was ich lange im Gedächtnis behalten werde.',
+        'Was soll man sagen? Fantastisches Sequel des ersten Parts, ist nur ein Tier weiter unten gelandet, weil wenig neues kam, aber der Humor und die Charaktere war weiterhin einfach fantastisch. Again - White Girl Boondocks',
         'img/cover/classof09reup.png',
         'img/sum/classof09reup.png',
         'C',
@@ -283,7 +283,7 @@ window.onload = function() {
 
     addGame(
         'Dispatch',
-        'Ein spannendes Spiel, das mich in die Welt der Notfallkommunikation eintauchen ließ. Die Mechaniken waren gut umgesetzt, aber das Gameplay fühlte sich manchmal etwas repetitiv an. Ich mochte die Atmosphäre, aber es fehlte mir das gewisse Etwas, um mich wirklich zu fesseln.',
+        'Ich hab Telltale 2015 Ära vermisst. Klar, das hier ist von adhoc games, aber man merkt den Einfluss stark. Das Gameplay ist simpel, aber Game-dienlich, die Story, Astethik und Charaktere alle unglaublich stark und man hat krasse Verbindung zu Robert aufgebaut. Aaron Paul hat das fantastisch gemacht. Das wahre Herz waren aber die Nebencharaktere. Invisigal, Golem, Chase besonders, aber GANZ besonders: Blonde Blazer.',
         'img/cover/dispatch.jpg',
         'img/sum/dispatch.jpg',
         'A',
@@ -292,7 +292,7 @@ window.onload = function() {
 
     addGame(
         'Still Wakes The Deep',
-        'Ein atmosphärisches Spiel, das mich in eine mysteriöse Unterwasserwelt entführte. Die Mechaniken waren interessant, aber das Gameplay fühlte sich oft langsam an. Ich mochte die visuelle Gestaltung, aber es fehlte mir das gewisse Etwas, um mich wirklich zu fesseln.',
+        'Lovecraft Year, WOOO! Das Game war ein guter Film. Die Grafik, Charaktere und Bedrohung war genial. Die Entität, die die Ölinsel heimsucht ist unerklärbar (Checkt meine Lovecraft Box) und der Bodyhorror ist so geil umgesetzt. Das Sounddesign der Monster macht es so geil ekelig. Kriegt "nur" C, da es irgendwann echt nur noch Walking Sim war, man die Mechanics der Monster gecheckt hat und keine Anspannung mehr gefühlt hat. Hab mich ggn. Ende, und das obwohl es relativ kurz ist, schon dem Ende entgegengesehnt. Trotzdem: Athmo 10/10!',
         'img/cover/stillwakesthedeep.jpg',
         'img/sum/stillwakesthedeep.jpg',
         'C',
@@ -301,7 +301,7 @@ window.onload = function() {
 
     addGame(
         'Grounded 2',
-        'Ich habe Grounded 2 sehr genossen. Die Erweiterung des Überlebensmechanismus und die neuen Umgebungen haben das Spiel frisch gehalten. Das Koop-Gameplay mit Freunden war besonders spaßig, und die neuen Kreaturen und Herausforderungen haben das Erlebnis bereichert. Insgesamt eine gelungene Fortsetzung.',
+        'Grounded war sooo gut und charmant, Grounded 2 zeigt in der Alpha gute Zeichen, das gut weiterzuentwickeln. Hab es in B gepackt weil es noch ziemlich unfertig ist, aber ich hab große Hoffnungen.',
         'img/cover/grounded2.jpg',
         'img/sum/grounded2.jpg',
         'B',
@@ -310,7 +310,7 @@ window.onload = function() {
 
     addGame(
         'Blue Prince',
-        'Ein charmantes Spiel mit einer einzigartigen Ästhetik. Die Geschichte war süß und die Charaktere liebenswert. Allerdings fühlte sich das Gameplay manchmal etwas repetitiv an. Ich mochte die Atmosphäre, aber es fehlte mir das gewisse Etwas, um mich wirklich zu fesseln.',
+        'Dieses Spiel schätzt meine Zeit nicht. Es ist extrem langweilig. Man hat eine Vermutung, wie man ein Puzzle löst und muss 3 Stunden die RNG Generation des Hauses testen, um seine Vermutungen zu überprüfen. Und achja, in diesem Run hast du das Item was du brauchst zufälligerweise nicht gefunden. Ups! Ja, fick Roguelike Puzzle Games. Mit dem Genre-Mix kann ich nichts anfangen.',
         'img/cover/blueprince.jpg',
         'img/sum/blueprince.jpg',
         'F',
@@ -319,7 +319,7 @@ window.onload = function() {
 
     addGame(
         'Carto',
-        'Ein kreatives Puzzlespiel, das mich mit seiner einzigartigen Kartenmechanik begeisterte. Das Gameplay war innovativ und die Welt war liebevoll gestaltet. Ich mochte die Herausforderung der Rätsel und die entspannte Atmosphäre des Spiels. Insgesamt ein sehr unterhaltsames Erlebnis.',
+        'Ich halte mich kurz: Carto ist süß, charmant und interessante Puzzle Mechaniken. Aber es ist leider echt boring. Pacing ist schwach, das Puzzle Gimmick hat sich schnell abgenutzt und war dann nur noch busywork',
         'img/cover/carto.jpg',
         'img/sum/carto.jpg',
         'D',
@@ -328,7 +328,7 @@ window.onload = function() {
 
     addGame(
         'Clair Obscur: Expedition 33',
-        'Ein atmosphärisches Spiel, das mich in eine geheimnisvolle Welt entführte. Die Mechaniken waren interessant, aber das Gameplay fühlte sich oft langsam an. Ich mochte die visuelle Gestaltung, aber es fehlte mir das gewisse Etwas, um mich wirklich zu fesseln.',
+        'Wow... Ich hab den Hype am Anfang verpasst. Das Game kam im Schatten von Oblivion raus. Als ich es dann probiert hab war relativ schnell klar, dass es das beste Spiel des Jahres für mich ist. Das Gameplay, das Kampfsystem, die Levels, die Charaktere, die Musik, die Story, blablabla. Ich kann hier ewig lange alle Aspekte des Games aufzählen, aber es hat mich in jeder Perspektive in den Bann gezogen. Alle Charaktere im Spiel, egal ob große oder kleine Rolle haben Herz und sind gut geschrieben. Die Story ist das beste, was ich bisher erlebt habe. Ich glaube nichtmal Cyberpunk oder Witcher 3 kommt daran. Das Game reiht sich bei mir genau auf diesem Level ein, ich glaube es ist in meinen Top 5 Games of all Time locker drin. Ich freue mich schon, was Sandfall in ein paar Jahren als nächstes zaubert. For those who come after',
         'img/cover/coe33.jpg',
         'img/sum/coe33.jpg',
         'S',
@@ -337,7 +337,7 @@ window.onload = function() {
 
     addGame(
         'Rift of the Necrodancer',
-        'Ein rhythmusbasiertes Roguelike, das mich mit seinem einzigartigen Gameplay begeisterte. Die Kombination aus Musik und Kampfmechaniken war innovativ und machte jede Begegnung spannend. Ich mochte die Herausforderung der Levels und die Vielfalt der Charaktere. Insgesamt ein sehr unterhaltsames Erlebnis.',
+        'Story, Gameplay, Artstyle, Soundtrack? Alles Top! Warum nur in D? Stellt sich raus, ich bin weder gut in Rhythmus Games, noch mag ich sie mechanisch besonders. Ich habs ne Chance gegeben, und das Spiel ist safe gut, aber nicht mein Ding.',
         'img/cover/riftofthenecrodancer.jpg',
         'img/sum/riftofthenecrodancer.jpg',
         'D',
@@ -346,7 +346,7 @@ window.onload = function() {
 
     addGame(
         'The Elder Scrolls IV: Oblivion Remastered',
-        'Ein Klassiker, der in der Remastered-Version immer noch viel Spaß macht. Die offene Welt und die Vielzahl an Quests bieten endlose Möglichkeiten zur Erkundung. Die Grafik wurde verbessert, was das Eintauchen in die Welt von Tamriel noch angenehmer macht. Obwohl einige Mechaniken etwas veraltet sind, bleibt das Spiel ein zeitloses Abenteuer.',
+        'Oh man, hab ich mich auf das Game gefreut! Und es hat alles versprochen, was ich mir gewünscht habe. Der Jank, die charmante Welt und das veraltete Leveling System. Man mag es Nostalgie nennen, aber ich habe jeden Aspekt, den ich bei anderen Games kritisieren würde geliebt. Das geb ich gerne zu, das Game wär safe nen paar Stufen weiter unten gelandet sonst. Aber die Welt... Sie ist soooo schön. Ich liebe es da zu sein. Kindheitsgame',
         'img/cover/oblivion.jpg',
         'img/sum/oblivion.jpg',
         'A',
@@ -355,7 +355,7 @@ window.onload = function() {
 
     addGame(
         'The Shore',
-        'Ein atmosphärisches Horror-Spiel, das mich mit seiner düsteren Stimmung und packenden Geschichte fesselte. Die visuelle Gestaltung war beeindruckend und trug zur unheimlichen Atmosphäre bei. Das Gameplay war spannend, aber manchmal etwas vorhersehbar. Insgesamt ein solides Erlebnis für Fans des Genres.',
+        'Mein Lovecraft Jahr. Leider kein gutes Game. Der Start fand ich ganz gut, die Atmosphäre und Isolation auf der Insel war schon Eindrucksvoll aber das Spiel ist relativ schnell zu boring walking Sim geworden. Lovecraftian Horror lebt für mich auch von Machtlosigkeit und Unwissenheit und der Protagonist hatte im weiteren Spielverlauf einfach beides nicht mehr. Das Ende war gut, alles andere sehr weird.',
         'img/cover/theshore.jpg',
         'img/sum/theshore.jpg',
         'F',
@@ -364,7 +364,7 @@ window.onload = function() {
 
     addGame(
         'Call of Cthulhu',
-        'Ein spannendes Detektivspiel, das mich in die Welt von H.P. Lovecraft eintauchen ließ. Die Atmosphäre war dicht und die Geschichte fesselnd. Die Mechaniken zur Untersuchung und Entscheidungsfindung waren gut umgesetzt, aber das Gameplay fühlte sich manchmal etwas langsam an. Ich mochte die visuelle Gestaltung, aber es fehlte mir das gewisse Etwas, um mich wirklich zu fesseln.',
+        'Hab es fürs Setting gekauft und das hat echt abgeliefert! Die Insel ist geil, die Rahmenstory fantastisch, aber das Gameplay und die spezifischen Storybeats waren leider eher schwach. Auch das Stealth/Gunplay hat mich eher gelangweilt. Das Worldbuilding selbst war aber richtig gut. Wünschte aber auch, sie hätten sich für stylisierte Grafik entschieden, die schlechte realistische Grafik hat mehr uncanny valley verursacht.',
         'img/cover/callofcthulhu.jpg',
         'img/sum/callofcthulhu.jpg',
         'D',
@@ -373,7 +373,7 @@ window.onload = function() {
 
     addGame(
         'Prince of Persia: The Lost Crown',
-        'Ein actiongeladenes Abenteuer, das mich mit seiner packenden Geschichte und den flüssigen Parkour-Mechaniken begeisterte. Die Welt war lebendig gestaltet und die Kämpfe herausfordernd, aber fair. Ich mochte die Vielfalt der Umgebungen und die Entwicklung des Charakters. Insgesamt ein sehr unterhaltsames Erlebnis für Fans von Action-Adventure-Spielen.',
+        'Das Spiel wäre gefloppt, wenn Movement und Kämpfe nicht so gut wären. Zum Glück sind beide Elemente aber gut. Die Metroidvania Komponenten auch, Weltdesign war echt stark, hatte sogar spaß daran, die Sammelgegenstände in der Welt zu entdecken. Die Story war extrem Mid, die Boss Fights größtenteils klasse. Spaßiges Game, gerne mehr!',
         'img/cover/poptlc.jpg',
         'img/sum/poptlc.jpg',
         'B',
@@ -382,7 +382,7 @@ window.onload = function() {
 
     addGame(
         'Kindergarten 3',
-        'Ein skurriles Spiel, das mich mit seinem einzigartigen Humor und den bizarren Charakteren unterhielt. Die Mechaniken waren einfach, aber effektiv, und die verschiedenen Handlungsstränge boten viel Wiederspielwert. Ich mochte die kreative Gestaltung der Levels und die unvorhersehbaren Ereignisse. Insgesamt ein lustiges und unterhaltsames Erlebnis.',
+        'Kindergarten ist immer ein Banger. Humor und Gameplay immer noch sehr charmant. Auch hier war es ein gutes Wochenendspiel, mehr nicht. Finde, sie haben das Konzept jetzt gut ausgeschöpft. Vor allem so die Rahmenstory ist jedes Game gleich, da hab ich schon gemerkt, dass etwas Fatigue eingesetzt hat.',
         'img/cover/kindergarten3.png',
         'img/sum/kindergarten3.png',
         'C',
@@ -391,7 +391,7 @@ window.onload = function() {
 
     addGame(
         'Duck Detective: The Ghost of Glamping',
-        'Die Fortsetzung von Duck Detective brachte erneut viel Charme und Humor mit sich. Die neuen Fälle waren kreativ gestaltet und die Rätsel fordernd, aber lösbar. Ich mochte die Erweiterung der Welt und die Einführung neuer Charaktere. Insgesamt ein solides Erlebnis für Fans des ersten Teils.',
+        'Der zweite Teil der Duck Detective Reihe. Solide, hat spaß gemacht! Die Charaktere waren super charmant und witzig geschrieben, das Rätsel war gut gestellt. Der Artstyle immer noch fantastisch. Joa, viel zu loben und wenig auszusetzen aber ich glaub das ist es auch. Sehr average das Spiel. Hatte auf jeden Fall spaß, aber danach quasi nicht mehr dran gedacht.',
         'img/cover/duckdetective2.png',
         'img/sum/duckdetective2.png',
         'C',
@@ -400,7 +400,7 @@ window.onload = function() {
 
     addGame(
         'Class of 09: The Flip Side',
-        'Die Fortsetzung von Class of 09 bot erneut nostalgischen Charme und einfache Mechaniken. Die neuen Szenarien waren unterhaltsam, aber fühlten sich manchmal etwas repetitiv an. Ich mochte die Erweiterung der Geschichte und die neuen Charaktere. Insgesamt ein nettes Erlebnis für Fans des ersten Teils.',
+        'Der dritte Teil der Reihe. Hab vorher viele negative Stimmen zu dem Game gehört, dachte mir aber, dass es so schlimm nicht sein kann. Solange der Humor stimmt, bin ich dabei. Aber ja, Jecka in der Hauptrolle hat leider nicht ganz gepasst, der Humor des Games war mir viel zu... sexualisiert, was tendenziell okay ist, das hatten die ersten Games ja auch, aber hier war die Pointe recht simpel: "Haha, Sexuelle Anspielung". Hab es leider abgebrochen, auch wenn ich den Vibe der Reihe weiterhin feiere',
         'img/cover/classof09flipside.png',
         'img/sum/classof09flipside.png',
         'DNF',
@@ -409,46 +409,69 @@ window.onload = function() {
 
     addGame(
         'World of Horror',
-        'Ein einzigartiges Horror-Spiel, das mich mit seiner retro-inspirierten Ästhetik und der dichten Atmosphäre fesselte. Die Mechaniken zur Erkundung und Entscheidungsfindung waren gut umgesetzt, aber das Gameplay fühlte sich manchmal etwas langsam an. Ich mochte die visuelle Gestaltung, aber es fehlte mir das gewisse Etwas, um mich wirklich zu fesseln.',
+        'LEIDER hat mich das Game nicht gepackt. Die Visuals und Lore sind extrem stark, offensichtlich von Junji Ito inspiriert, aber das hat im Endeffekt nicht gereicht. Das Gameplay war unintuitiv, die Storybeats unnachvollziehbar und inkohärent. Es gab mir die Vibes als sollte der Mehrwert durch den Style kommen, aber mir schaudert es leider nicht, wenn ich nicht mitkomme. UI auch extrem cluttered. Ich glaub das war eine bewusste Entscheidung, but I did not like it sadly!',
         'img/cover/worldofhorror.jpg',
         'img/sum/worldofhorror.jpg',
-        'DNF',
+        'D',
         '2025'
     ),
 
     addGame(
         'Static Dread: The Lighthouse',
-        'Ein atmosphärisches Horror-Spiel, das mich mit seiner düsteren Stimmung und packenden Geschichte fesselte. Die visuelle Gestaltung war beeindruckend und trug zur unheimlichen Atmosphäre bei. Das Gameplay war spannend, aber manchmal etwas vorhersehbar. Insgesamt ein solides Erlebnis für Fans des Genres.',
+        'Man spielt einen Leuchtturmwärter auf einer abgelegenen Insel, der mit übernatürlichen Ereignissen konfrontiert wird. Die Atmosphäre ist dicht und unheimlich, unterstützt durch eine gelungene Soundkulisse und stimmungsvolle Grafiken im Retro-Stil. Das Gameplay selbst ist meing größtes Issue. Es ist etwas zäh. Die Schichtarbeit, wie so häufig im echten Leben, bockt leider nicht richtig. Sie dient als Mittel zum Zweck, klar, aber es zieht sich. Ich hab nie mehr als zwei Nächte (In Game) in Folge gespielt.',
         'img/cover/staticdread.jpg',
         'img/sum/staticdread.jpg',
-        'DNF',
+        'C',
         '2025'
     )
 
+    /*
     addGame(
         'Look Outside',
-        'Ein entspannendes Spiel, das mich mit seiner ruhigen Atmosphäre und den malerischen Umgebungen begeisterte. Die Mechaniken waren einfach, aber effektiv, und die verschiedenen Szenarien boten viel Abwechslung. Ich mochte die kreative Gestaltung der Levels und die beruhigende Musik. Insgesamt ein schönes Erlebnis zum Abschalten.',
+        '',
         'img/cover/lookoutside.png',
         'img/sum/lookoutside.png',
         'DNF',
         '2025'
     );
+    */
 
     addGame(
         'Verho: Curse of Faces',
-        'Ein atmosphärisches Spiel, das mich in eine geheimnisvolle Welt entführte. Die Mechaniken waren interessant, aber das Gameplay fühlte sich oft langsam an. Ich mochte die visuelle Gestaltung, aber es fehlte mir das gewisse Etwas, um mich wirklich zu fesseln.',
+        'Ich hab es am Release Day random in meiner Frontseite entdeckt und dachte mir "Why not? Sieht schnieke aus!" Hatte wenig Erwartungen, außer dass es ein bisschen diesen Dark Souls Itch scratched. Und das tat es. Die Welt zu erkunden war mein Highlight. Die Asthetik ist so gut umgesetzt, die PS2-Grafik extrem gut eingebettet. Die Kämpfe schaffen es auch trotz bewusst gewählten Stil sehr responsive und gut designed zu sein. Die Story hat micha auch immens abgeholt, obwohl es recht simpel war a la "Verfluchtes Land - Breche den Fluch", die Lore der Welt war extrem Deep.',
         'img/cover/verho.jpg',
         'img/sum/verho.jpg',
         'A',
         '2025'
     );
 
+    /*
     addGame(
         'The Drifter',
-        'Ein spannendes Spiel, das mich mit seiner packenden Geschichte und den herausfordernden Mechaniken fesselte. Die Welt war lebendig gestaltet und die Kämpfe anspruchsvoll, aber fair. Ich mochte die Vielfalt der Umgebungen und die Entwicklung des Charakters. Insgesamt ein sehr unterhaltsames Erlebnis für Fans von Action-Adventure-Spielen.',
+        'Empfehlung eines Arbeitskollegen, noch nicht zu gekommen',
         'img/cover/thedrifter.png',
         'img/sum/thedrifter.png',
         'DNF',
         '2025'
     )
+    */
+
+    addGame(
+        'SANABI',
+        'Habe lange zwischen S & A geschwankt, aber die Story hat mich komplett mitgenommen. Selten, dass man bei High-Intensity Platformer Games weinen muss. Das Gameplay macht krass süchtig, das Platforming ist extrem gut umgesetzt und ich könnte den ganzen Tag weitere Levlels spielen. Die Story, die ich anfangs ehrlicherweise als Unterbrechung des Gameplays wahrgenommen habe, hat mich doch recht schnell abgeholt. Die Dynamik zwischen dem Hauptcharakter und Mari ist fantastisch, unterhaltsam und lieb. Mari selbst ist fantastisch geschrieben. Ihre Energie war erfrischend und die Backstory während des Spiels zu entdecken hat ihr nochmal so viel verdiente Tiefe gegeben. Das Ende des Spiels hab ich ein bisschen kommen sehen, aber nicht im Sinne "Vorhersehbar", sondern eher Kategorie "Gutes Foreshadowing, fantastische Resolution". Wärs nicht Cyberpunk, hätte ich es wohl aber in A gepackt lul',
+        'img/cover/sanabi.jpg',
+        'img/sum/sanabi.jpg',
+        'S',
+        '2025'
+    )
+/*
+    addGame(
+        'Mouthwashing',
+        'Mouthwashing ist ein skurriles und einzigartiges Spiel, das mich mit seinem bizarren Humor und den ungewöhnlichen Mechaniken unterhielt. Die Geschichte war seltsam, aber auf eine faszinierende Weise, und die verschiedenen Szenarien boten viel Abwechslung. Ich mochte die kreative Gestaltung der Levels und die unvorhersehbaren Ereignisse. Insgesamt ein lustiges und unterhaltsames Erlebnis für diejenigen, die etwas anderes suchen.',
+        'img/cover/mouthwashing.jpg',
+        'img/sum/mouthwashing.jpg',
+        'DNF',
+        '2025'
+    )
+*/
 };
