@@ -1,4 +1,4 @@
-
+/* --- GLOBAL SETTINGS (Apply to everything) --- */
 body {
   font-family: "Press Start 2P", system-ui;
   margin: 0;
@@ -11,14 +11,14 @@ body {
   color: white;
 }
 
-/* Tier list container */
+/* --- LAYOUT CONTAINERS --- */
 .containers {
   display: flex;
   flex-direction: column;
-  align-items: flex-start; /* Align everything to the left */
+  align-items: flex-start;
   justify-content: space-between;
   width: 80vw;
-  height: auto; /* Allow the container to expand based on content */
+  height: auto;
   background-color: black;
   padding: 10px;
   border-radius: 20px;
@@ -27,33 +27,37 @@ body {
 .row {
   display: flex;
   flex-wrap: nowrap;
-  align-items: center; /* Align label and games to the top */
+  align-items: center;
   width: 100%;
   height: auto;
   background-color: rgb(10, 10, 10);
   color: black;
   justify-content: flex-start;
-  margin-bottom: 15px; /* Adds space between tiers */
+  margin-bottom: 15px;
 }
 
+/* --- TIER LABELS --- */
 .label {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 90px; /* Fixed width for consistency */
+  width: 90px; 
+  min-width: 90px;
   height: 90px;
-  margin-right: 10px; /* Add space between the label and the games */
+  margin-right: 10px;
   color: white;
   text-shadow: -3px 0 black, 0 3px black, 3px 0 black, 0 -3px black;
   font-weight: bold;
   font-style: italic;
   border-radius: 5px;
+  flex-shrink: 0;
 }
 
+/* --- GAME CARDS --- */
 .games {
   display: flex;
-  overflow-x: auto; /* Allow horizontal scrolling */
-  overflow-y: hidden; /* Ensure no vertical overflow */
+  overflow-x: auto;
+  overflow-y: hidden;
 }
 
 .card {
@@ -64,9 +68,9 @@ body {
   width: 90px;
   background-color: rgb(10, 10, 10);
   color: black;
-  margin-left: 5px; /* Adds space between cards */
+  margin-left: 5px;
   margin-right: 5px;
-  box-sizing: border-box; /* Ensures consistent sizing with margins */
+  box-sizing: border-box;
 }
 
 img {
@@ -74,6 +78,43 @@ img {
   height: 100%;
 }
 
+/* --- FILTER BUTTONS --- */
+.filter-container {
+  text-align: center;
+  margin-bottom: 15px;
+  font-family: 'Press Start 2P', sans-serif;
+  color: white;
+  font-size: 0.8rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.filter-btn {
+  display: inline-block;
+  padding: 8px 12px;
+  margin: 0 6px;
+  color: white;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  font-size: 0.7rem;
+  border-radius: 5px;
+  text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black; 
+}
+
+/* Filter Colors */
+#filter-all { background-color: #AD8DE0; }
+#filter-2024 { background-color: #7D964C; }
+#filter-2025 { background-color: #6BD5DA; }
+#filter-2026 { background-color: #D4D45E; }
+
+/* Filter Hover States */
+#filter-all:hover { background-color: #cbb4ef; }
+#filter-2024:hover { background-color: #a3b97b; }
+#filter-2025:hover { background-color: #9ee4e7; }
+#filter-2026:hover { background-color: #E2E293; }
+
+/* --- SUMMARY SECTION --- */
 #summary {
   min-height: 400px;
   height: auto;
@@ -86,27 +127,73 @@ img {
   left: 0;
   z-index: 0;
   object-fit: cover;
-  width: 100%; /* Adjust size as needed */
+  width: 100%;
   height: auto;
   opacity: 0.8;
   mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 1) 50%, rgba(0, 0, 0, 0) 75%);
   -webkit-mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 1) 50%, rgba(0, 0, 0, 0) 75%);
 }
 
-#summary-title{
-  background-color: rgb(10, 10, 10, 0.5);
-  line-height:150%;
-  padding:1%;
+#summary-title {
+  background-color: rgb(10, 10, 10, 0.8);
+  border: 2px solid #555;
+  box-shadow: 3px 3px 0px #000;
+  border-radius: 5px;
+  color: white;
+  line-height: 150%;
+  padding: 10px 15px;
+  width: fit-content;
+  max-width: 90%;
+  margin-bottom: 10px;
 }
 
-
-#summary-text{
-  background-color: rgb(10, 10, 10, 0.5);
-  line-height:150%;
-  padding:1%;
+#summary-text {
+  background-color: rgb(10, 10, 10, 0.8);
+  border: 2px solid #555;
+  box-shadow: 3px 3px 0px #000;
+  border-radius: 5px;
+  color: white;
+  line-height: 150%;
+  padding: 15px;
+  margin-right: 5vw;
+  display: block;
 }
 
-/* Mobile Styles */
+.stat-box {
+  display: inline-block;
+  background-color: rgb(10, 10, 10, 0.8);
+  color: #fff;
+  padding: 8px 12px;
+  border-radius: 5px;
+  font-size: 0.8rem;
+  font-family: "Press Start 2P", system-ui;
+  text-shadow: 2px 2px 0px #000;
+  border: 2px solid #555;
+  box-shadow: 3px 3px 0px #000;
+}
+
+/* --- SCROLLBARS (Webkit) --- */
+.games::-webkit-scrollbar {
+  height: 5px; /* PC default height */
+}
+
+.games::-webkit-scrollbar-track {
+  background: #1a1a1a;
+  border-radius: 5px;
+}
+
+.games::-webkit-scrollbar-thumb {
+  background: #555;
+  border-radius: 5px;
+}
+
+.games::-webkit-scrollbar-thumb:hover {
+  background: #888;
+}
+
+/* =========================================
+   MOBILE OVERRIDES (Max Width 768px)
+   ========================================= */
 @media (max-width: 768px) {
   body {
     font-size: 1rem;
@@ -114,69 +201,35 @@ img {
 
   h1#title {
     text-align: center;
-    font-size: 2rem; /* Make the title responsive */
+    font-size: clamp(1rem, 5vw, 2rem); 
+    width: 100%;
+    padding: 0 10px;
+    box-sizing: border-box;
+    word-wrap: break-word; 
+    overflow-wrap: break-word;
+    line-height: 1.5;
     margin-bottom: 20px;
   }
 
   .containers {
-    width: 90vw; /* Adjust container width for mobile */
-    height: auto; /* Let it expand as needed */
-  }
-
-  .label {
-    min-width:70px;
-    width: 70px; /* Adjust the label size */
-    height: 70px; /* Adjust the height for better visibility */
+    width: 90vw;
+    height: auto;
   }
 
   .card {
-    width: 70px; /* Adjust card size for mobile */
-    height: 70px; /* Ensure cards remain square */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
   }
 
   #summary {
-    margin-top: 20px; /* Ensure the summary stays below the tier list */
+    margin-top: 20px;
     min-height: 200px;
   }
 
   #summary img {
     width: 100%;
-    height: auto; /* Allow the summary background to scale properly */
+    height: auto;
   }
 }
-
-  .filter-container {
-    text-align: center;
-    margin-bottom: 15px;
-    font-family: 'Press Start 2P', sans-serif;
-    color: white;
-    font-size: 0.8rem;
-    display: flex; /* Helps align items */
-    justify-content: center;
-    align-items: center;
-  }
-
-  .filter-btn {
-    display: inline-block;
-    padding: 8px 12px;
-    margin: 0 6px;
-    /* border: 2px solid #ccc; */ /* <-- Removed border */
-    color: white;
-    cursor: pointer;
-    transition: all 0.2s ease; /* Smooth transition */
-    font-size: 0.7rem; /* Slightly smaller */
-    border-radius: 5px; /* <-- Added rounded corners */
-    /* Added scaled-down text shadow for the "border" effect */
-    text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black; 
-  }
-
-  /* Individual colors for the buttons */
-  /* Removed border-color from each */
-  #filter-all { background-color: #AD8DE0; } /* F-Tier Purple */
-  #filter-2024 { background-color: #7D964C; } /* C-Tier Green */
-  #filter-2025 { background-color: #6BD5DA; } /* D-Tier Blue */
-
-  /* Hover state - makes them slightly brighter */
-  #filter-all:hover { background-color: #cbb4ef; }
-  #filter-2024:hover { background-color: #a3b97b; }
-  #filter-2025:hover { background-color: #9ee4e7; }

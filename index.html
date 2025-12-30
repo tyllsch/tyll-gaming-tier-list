@@ -16,6 +16,7 @@
             <span id="filter-all" class="filter-btn" onclick="filterGames('all', this)">Alle</span>
             <span id="filter-2024" class="filter-btn" onclick="filterGames('2024', this)">2024</span>
             <span id="filter-2025" class="filter-btn" onclick="filterGames('2025', this)">2025</span>
+            <!--<span id="filter-2026" class="filter-btn" onclick="filterGames('2026', this)">2026</span>-->
         </div>
         <div id="board" class="containers">
             <div class="row">
@@ -49,7 +50,11 @@
         </div>
         <div id="summary" class="containers" style="position: relative; display: none; overflow: hidden;">
             <img id="summary-background" src="">
-            <h2 id="summary-title" style="margin-left:1vw; position: relative; z-index: 1; font-weight:bold;"></h2><br>
+            <h2 id="summary-title" style="margin-left:1vw; position: relative; z-index: 1; font-weight:bold;"></h2>
+            <div id="summary-stats" style="margin-left: 1vw; position: relative; z-index: 1; display: flex; gap: 10px; margin-top: 10px; margin-bottom: 10px;">
+                <span id="stat-playtime" class="stat-box"></span>
+                <span id="stat-achievements" class="stat-box"></span>
+            </div>
             <p id="summary-text" style="margin-left: 5vw; position: relative; z-index: 1;"></p>
         </div>
 	    <script src="src/gameFunctions.js"></script>
