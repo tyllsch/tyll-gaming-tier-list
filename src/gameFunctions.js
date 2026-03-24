@@ -1,4 +1,3 @@
-// Function to display the game summary
 function showSummary(image) {
     const summaryDiv = document.getElementById('summary');
     summaryDiv.style.display = 'block';
@@ -7,7 +6,6 @@ function showSummary(image) {
     const summaryTitle = document.getElementById('summary-title');
     const summaryText = document.getElementById('summary-text');
     
-    // New Elements
     const statPlaytime = document.getElementById('stat-playtime');
     const statAchievements = document.getElementById('stat-achievements');
 
@@ -17,7 +15,6 @@ function showSummary(image) {
     const backgroundImage = image.getAttribute('data-img');
     summaryBackground.src = backgroundImage;
     
-    // --- HANDLING PLAYTIME ---
     const playtime = image.getAttribute('data-playtime');
     if (playtime && playtime !== 'undefined') {
         statPlaytime.style.display = 'inline-block';
@@ -26,12 +23,10 @@ function showSummary(image) {
         statPlaytime.style.display = 'none';
     }
 
-    // --- HANDLING ACHIEVEMENTS ---
     const achievements = image.getAttribute('data-achievements');
     if (achievements && achievements !== 'undefined') {
         statAchievements.style.display = 'inline-block';
         
-        // Auto-calculate percentage if format is "number/number"
         let displayText = '🏆 ' + achievements;
         const parts = achievements.split('/');
         if (parts.length === 2) {
@@ -50,7 +45,6 @@ function showSummary(image) {
     summaryDiv.scrollIntoView({ behavior: 'smooth' });
 }
 
-// Updated addGame with 2 new OPTIONAL parameters at the end
 function addGame(title, summary, imgTierList, imgSummaryCard, tier, year, playtime, achievements) {
     let row;
     switch (tier.toUpperCase()) {
@@ -83,7 +77,6 @@ function addGame(title, summary, imgTierList, imgSummaryCard, tier, year, playti
     const card = document.createElement('div');
     card.classList.add('card');
     card.style.visibility = 'visible';
-    // Ensure flex is set to fix the layout bug you had earlier
     card.style.display = 'flex'; 
     card.style.flexShrink = '0';
 
@@ -96,7 +89,6 @@ function addGame(title, summary, imgTierList, imgSummaryCard, tier, year, playti
     img.setAttribute('data-img', imgSummaryCard);
     img.setAttribute('data-year', year);
     
-    // Set new attributes if they exist
     if (playtime) img.setAttribute('data-playtime', playtime);
     if (achievements) img.setAttribute('data-achievements', achievements);
 
@@ -113,10 +105,21 @@ function filterGames(year) {
         const card = gameImage.parentElement; 
 
         if (year === 'all' || gameImage.dataset.year === year) {
-            // FIX from previous step included here
             card.style.display = 'flex'; 
         } else {
             card.style.display = 'none';
         }
     });
+    window.history.pushState({}, '', '?year=' + year);
 }
+
+window.addEventListener('DOMContentLoaded', () => {
+    const urlParams = new URLSearchParams(window.location.search);
+    const yearFromUrl = urlParams.get('year');
+
+    if (yearFromUrl) {
+        setTimeout(() => {
+            filterGames(yearFromUrl);
+        }, 50);
+    }
+});
