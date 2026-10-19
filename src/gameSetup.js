@@ -1,718 +1,1225 @@
 // gameSetup.js
 
-window.onload = function() {
-    addGame(
-        'Hollow Knight', 
-        'Als ich angefangen habe Hollow Knight zu spielen war die erste Emotion, die ich dabei gefühlt habe, Frustration. Mir war direkt zum Start klar, dass das Spiel quasi für mich gemacht war und ich war enorm frustriert, es nicht viel früher gespielt zu haben. Umso besser, dass es dieses Jahr so weit war.<br><br>Hollow Knight ist simpel. Nicht im Sinne, dass es Leicht wäre, aber dass alle Mechanics super intuitiv sind und die Perfektion und Kombination aller Basics die größte Herausforderung ist.<br><br>Es gibt kein Aspekt, den ich als Schwäche ausmachen kann. Lore, World & Boss Design, Visuals, Kampf- & Skillsystem. Alles fühlt sich enorm optimiert an. Vor allem das Map Design. Es macht anfangs einen sehr linearen Eindruck aber irgendwann steht man fast ziellos rum. Aber schnell merkt man, dass jedes Ziel mehrere Wege hat und man für "Zielloses" Erkunden belohnt wird.<br><br>Anders als Viele fromsoft Games gibt es zudem einen Boss Replay Mode, und jedes "Souls-Like" verdient so etwas. Ist jetzt auch das zweite Jahr in Folge, dass ein Spiel mit Boss Replay Mode mein Spiel des Jahres wird (Sekiro :*)',
-        'img/cover/hollowknight.jpg', 
-        'img/sum/hollowknight.jpg', 
-        'S',
-        '2024',
-        '101.5h',
-        '62/63'
-    );
-    
-    addGame(
-        'Firewatch',
-        'Emotional, Visuell und von der Story ein wahnsinnig schönes Spiel. Aber mehr auch nicht.<br><br>Das Ende, Spoiler, hat mich ein bisschen enttäuscht und unterwältigt. Es passt wohl zum Motiv des Spiels, aber das Mysterium des Spiels war viel zu spannend für diese Konklusion.<br>Die Charaktere sind fantastisch geschrieben und vertont. Einer der besseren "Walking-Simulator" und ehrlich gesagt auch ein gutes Horror-Spiel. Zumindest fühlte es sich oft so an, ich weiß nicht, ob das so beabsichtigt war.<br><br>Aber ja, das Game hatte das Problem, dass die Red Herrings, die es aufgestellt hat, spannender als die tatsächliche Story war.',
-        'img/cover/firewatch.jpg',
-        'img/sum/firewatch.jpg',
-        'C',
-        '2024',
-        '5.5h',
-        '10/10'
-    );
-
-    addGame(
-        'Nine Sols', 
-        'Hab es direkt nach Hollow Knight begonnen und konnte mich nicht reinarbeiten, da es zu ähnlich war und doch so anders.<br>Ein Paar Monate später hab ich es lieben gelernt.<br><br>Es ist offensichtlich von Sekiro und Hollow Knight inspiriert, weiß diese Inspiration aber auch umzusetzen, dass es ein spaßiges Kampfsystem ermöglicht. Die Map, auch wenn anfangs unintuitiv, ist auch fantastisch gestaltet.<br><br>Visuell ist es wahrscheinlich das schönste Spiel was ich dieses Jahr gespielt habe. Die Farben, die handgezeichneten Paneele, alles pure Klasse.<br>Die Story ist besser erzählt als Sekiro und Hollow Knight, emotional auch sehr viel ansprechender. Während ich Yi nicht immer mochte, war er trotzdem ein fantastischer Hauptcharakter.<br><br>Meine Überraschung des Jahres, mein Lieblingsbossfight dieses Jahr, insgesamt einfach geil. Replayability ist leider eingeschränkt geil mit den vielen Cutscenes und keine Möglichkeit Bosse zu replayen. Da ist Hollow Knight vorraus.', 
-        'img/cover/ninesols.jpg', 
-        'img/sum/ninesols.jpg',
-        'S',
-        '2024',
-        '47.9h',
-        '35/35'
-    );
-
-    addGame(
-        'Cyberpunk Phantom Liberty', 
-        'Alles Cyberpunk bin ich total voreingenommen. Ein fantasischer DLC, der Cyberpunk Spy Thriller perfekt umsetzt. Manchmal zog es sich leicht, aber fantastisches Gameplay.<br><br>Nur die Charaktere fand ich teilweise anstrengend, was mir auch leider das Ende etwas made gemacht hat, da ich nicht ganz den gewünschten emotionalen Zugang hatte und die gewünschte Reaktion ausgeblieben ist.<br><br>Ein tolles neues Kapitel aber im Cyberpunk Universum, ich werde es immer lieben.', 
-        'img/cover/cp_pl.jpg', 
-        'img/sum/cp_pl.jpg', 
-        'A',
-        '2024'
-    );
-
-    addGame(
-        'Dredge', 
-        'Auch eine Überraschung für mich. Lovecraftian Horror ist geil und dieses Spiel vereint "Cozy-Game" und existentielle Angst perfekt.<br><br>Das Spiel hatte leichte Pacing Probleme, da nach ca. 50% wenig neue Mechanics hinzukommen und man nur noch die Story durchgerusht wird aber vllt. hab ich am Anfang auch zu viel gegrindet.<br><br>Story war fantastisch, das Spiel hat wahrscheinlich, dicker Spoiler an der Stelle, den besten Plot Twist in einem Videospiel, den ich jemals gesehen hab. Ich hab die Themes und das simple Gameplay einfach gelibet', 
-        'img/cover/dredge.jpg', 
-        'img/sum/dredge.jpg', 
-        'A',
-        '2024',
-        '28.2h',
-        '60/60'
-    );
-
-    addGame(
-        'Ghost Trick: Phantom Detective', 
-        'Ich liebe Puzzlespiele mit Twists. Den Core Gameplay Loop von Ghost Trick muss man mögen, sonst hat man keinen Spaß, aber bei mir hat er auf jeden Fall gezündet.<br><br>Die Story und Charakter sind fantastisch geschrieben, dass man auch jenseits des normalen Bedürfnis, das Spiel durchzuspielen, ständig motiviert ist, die übergeordnete Story zu lösen. Das Spiel ist fantastisch geschrieben, man sieht die Twists und Auflösungen eigentlich selten kommen, aber sie ergeben immer Sinn und tragen zu dem tollen Erlebnis bei', 
-        'img/cover/ghosttrick.jpg', 
-        'img/sum/ghosttrick.jpg', 
-        'A',
-        '2024',
-        '19.1h',
-        '30/30'
-    );
-
-    addGame(
-        'Signalis', 
-        'Survival Horror a la Silent Hill sind auch nicht mein Ding (Cyberpunk aber schon, also hat das Game ne Chance von mir bekommen). Dafür hab ich dieses Spiel krass lieben gelernt.<br><br>Das Spiel wirkt super optimiert, alle Mechanics funktioneren klasse zusammen und während ich die Story auch nach ganz vielen Youtube Sessions nicht ganz verstanden hab, sind die Motive des Spiels mir überraschend nahe gegangen.<br>Einsamkeit, Schicksal. Die Dynamik des Main Characters mit Ariane ist einfach nur traurig, perfekt und wunderschön.', 
-        'img/cover/signalis.jpg', 
-        'img/sum/signalis.jpg',
-        'B',
-        '2024',
-        '14.3h',
-        '11/13'
-    );
-
-    addGame(
-        "Tony Hawk's Underground", 
-        'Die Tony Hawk Reihe war ein Pfeiler meiner Kindheit. Dieser Teil ist mir aber immer entwichen, einfach weil meine Eltern mir ihn nie gekauft haben. Der Story Mode ist einer der besten der Reihe und mal was komplett neues.<br><br>Als THUG2 Fan war das Gameplay nichts neues/überraschendes aber es hat einfach wahnsinnig spaß gemacht. Und das war eig die Hauptsache, mehr ist mir vom Game nicht hängen geblieben.<br><br>Fick Eric Sparrow.', 
-        'img/cover/thug.jpg', 
-        'img/sum/thug.jpg', 
-        'B',
-        '2024'
-    );
-
-    addGame(
-        'OlliOlli World', 
-        'Ich hatte seitdem ich Tony Hawk Games gespielt hab immer Probleme mich auf andere Skategames einzulassen.<br>OlliOlli World war die Ausnahme. Es ist eins dieser "Easy to learn, hard to master" Games und die Mechanics, der Flow der Levels fühlt sich einfach geil und befriedigend an.<br><br>Der Artstyle, der Soundtrack. Muy Bueno.<br>Einzige, leider große Schwäche: Nachdem Manuals eingefügt werden fühlt sich jedes Level an wie ein "Combo durchs ganze Level" und das nimmt extrem Geschwindigeit aus dem Game, da man immer restartet. Insgesamt, Pacing Probleme sind ein Issue, das Game hätte gern 20% kürzer sein können.', 
-        'img/cover/olliolli.jpg', 
-        'img/sum/olliolli.jpg', 
-        'B',
-        '2024',
-        '16.8h',
-        '25/54'
-    );
-
-    addGame(
-        'Burnout Paradise', 
-        'Was soll man dazu sagen. Mies satisfying das Game. Die Fahrmechanics sind intuitiv und fühlen sich gut an. Optisch und von Feedback macht das Game einiges her. Der Soundtrack ist ideal.<br><br>Einfach ein Game, das man sich gerne nebenbei anmacht und zockt. Cooles Arcade Game, bin ein großer Fan von Open World Racer Games.', 
-        'img/cover/burnoutparadise.jpg', 
-        'img/sum/burnoutparadise.jpg', 
-        'C',
-        '2024',
-        '39.6h',
-        '32/56'
-    );
-
-    addGame(
-        'Duck Detective: The Secret Salami', 
-        'Detektivspiele sind gerade ein großes Ding für mich. Ich such immer nach idealen Games. Spiele sind leider selten so frei, dass man komplett falsch liegen kann bei einem Rätsel, aber trotzdem weiterspielt.<br><br>Duck Detective macht das auch nicht (die Einleitung hat vllt anderes erwarten lassen) aber ist mies charmant. Es findet ein gutes Verhältnis, dass man wirklich selbst nachdenken muss um ein Fall zu lösen, ist aber manchmal doch sehr künstlich im Prozess der Detektivarbeit.<br>Insgesamt super charmant, aber das wars wohl.', 
-        'img/cover/duckdetective.jpg', 
-        'img/sum/duckdetective.jpg', 
-        'C',
-        '2024',
-        '1.9h',
-        '7/7'
-    );
-
-    addGame(
-        'Dead by Daylight', 
-        'Asymettrischer Mulitplayer ist immer eine Herausforderung, Dead By Daylight macht das aktuell glaube ganz gut.<br><br>Die Runden machen spaß, auch wenn man verliert, und es wirkt insgesamt einfach wie ein super Spiel, dass man mit Friends zocken kann. Muss ich häufiger spielen', 
-        'img/cover/dbd.jpg', 
-        'img/sum/dbd.jpg', 
-        'C',
-        '2024',
-        '15.5h',
-        '18/288'
-    );
-
-    addGame(
-        'Pony Island', 
-        'Solide. Ich hab Inscryption vor diesem Spiel gespielt und demnach hohe Erwartungen gehabt. Man sieht offensichtlich ähnliche Konzepte, wie bei Inscryption, aber alles fühlte sich etwas unausgereifter an.<br><br>Das Core Gameplay macht spaß und auch die Story war gut, aber ich merkte, wie mir nichts davon länger im Kopf blieb. Ich kann nichtmal Kritik formulieren, das Spiel war einfach... ganz gut?', 
-        'img/cover/ponyisland.jpg', 
-        'img/sum/ponyisland.jpg', 
-        'D',
-        '2024',
-        '2.3h',
-        '12/20'
-    );
-
-    addGame(
-        'Resident Evil 2', 
-        'Hier kann ich mich kurz und knackig halten. Nicht meine Genre, hatte trotzdem Spaß.<br><br>Vor allem die Metroidvania Komponenten fand ich klasse. Die Map zu lernen hat sich gut und intuitiv angefühlt. Wünschte, es hätte noch mehr Content im RCPD gegeben.<br>Weiß nicht, ob ich den Nemesis mochte, da ich vor allem die Erkundung der Polizeistation gut fand und die nach seiner Einführung eher rückgestellte Prio eingenommen hat.', 
-        'img/cover/re2.jpg', 
-        'img/sum/re2.jpg',
-        'D',
-        '2024',
-        '11.5h',
-        '18/44'
-    );
-
-    addGame(
-        'Balatro', 
-        'Roguelite. Hätte ich das mal früher gewusst. Insgesamt besser als ein Otxo, optisch auch mein Ding.<br>Aber mehr als witzige Unterhaltung nebenbei ist das Spiel für mich auch nicht. Man merkt dem Spiel aber Qualität an und ich hatte eigentlich immer Spaß.<br><br>-> 20h später, find ichs echt toll. So Roguelite ist es gar nicht und die Mechanics sind super optimiert. Es macht einfach spaß neue Runs zu spielen und mit neuen Strats versuchen so weit wie möglich zu kommen. I love it', 
-        'img/cover/balatro.jpg', 
-        'img/sum/balatro.jpg',
-        'A',
-        '2024',
-        '166.3h',
-        '26/31'
-    );
-
-    addGame(
-        'Palworld', 
-        'Survival Games sind ein Genre, das für mich relativ Hit or Miss ist. Grounded bspw. ist fantastisch und macht vieles richtig, während ARK für mich z.B. einfach überladen und aufgeblasen ist.<br><br>Palworld fällt eher in die letztere Kategorie. Abseits der offensichtlichen Pokémon "Inspiration" merkt man, dass das Spiel nahezu keine Survival Mechanics neu erfindet.<br>Insgesamt unglaublich langweilig', 
-        'img/cover/palworld.jpg', 
-        'img/sum/palworld.jpg', 
-        'F',
-        '2024'
-    );
-
-    addGame(
-        'Otxo', 
-        'Eine wertvolle Entdeckung, die ich dieses Jahr gemacht habe ist, dass Roguelites nichts für mich sind.<br><br>Das Spiel nimmt viele Aspekte von Hotline Miami, die ich geil fand, und schafft es trotzdem sich unglaublich unzufriedenstellend zu spielen.<br>Hatte das Gefühl, viele Mechanics konkurrieren gegeneinander. Bspw. ist es schnell und adrenalingeladen, aber hat Bullet Time und nimmt damit die Geschwindigkeit aus dem Spiel.<br><br>Hab nicht zu Ende gespielt und werde das auch nicht nachholen. Packt mich einfach nicht, ist aber wahrscheinlich ganz gut.',
-        'img/cover/otxo.jpg', 
-        'img/sum/otxo.jpg', 
-        'DNF',
-        '2024',
-        '0.6h',
-        '2/18'
-    );
-
-    addGame(
-        'Catherine', 
-        'Die Story und Themes fand ich eigentlich super, aber das Gameplay war absolut nicht mein Fall.<br><br>Die Puzzles ziehen sich und sind unglaublich repetitiv und langweilig. Story war gut genug, dass ich mich danach eingelesen hab.', 
-        'img/cover/catherine.jpg', 
-        'img/sum/catherine.jpg', 
-        'DNF',
-        '2024'
-    );
-
-    addGame(
-        'Chants of Sennaar',
-        'Wow. Ich hätte das auch in A packen können, aber dafür war leider nicht genug Content da. Es hatte ideale Puzzle/Detective Mechanics und war optisch einfach nur atemberaubend.<br><br>Sprachen zu lernen damit war ein cooler Twist und ich hab die Überforderung, ganz viele Wörter zu lernen, ohne die anwenden zu können, geliebt. Es war wahrscheinlich mein Puzzle Highlights dieses Jahr, aber ich glaube ich hab an das Genre vllt. unrealisitsche Standards. Am liebsten würde ich ein Detective Game spielen wo man in den ersten 30 Minuten einen Fehler macht und das bis zum Ende des Games nicht rausbekommt :D',
-        'img/cover/chantsofsennaar.jpg',
-        'img/sum/chantsofsennaar.jpg',
-        'B',
-        '2024',
-        '9.3h',
-        '25/25'
-    );
-
-    addGame(
-        'The Dark Pictures: House of Ashes',
-        'Ich mag das Konzept, das Game fand ich aber von der Story und den Characters bisher das schwächste Game des Entwicklers. Nur Jason war ein interessanter Charakter, die anderen waren gefühlt nur überspitzte Karikaturen.<br><br>Ich hatte spaß, die Lore zu checken, aber es taten mir trotzdem zu viele Fragezeichen auf. Hat spaß gemacht, aber hängen geblieben ist wenig. Postman Alpha Out',
-        'img/cover/hoa.jpg',
-        'img/sum/hoa.jpg',
-        'D',
-        '2024'
-    );
-
-    addGame(
-        'The Henry Stickmin Collection',
-        'Hab nix auszusetzen an dem Game. Mechanics sind sehr basich, Quali ist wechselhaft aber es war durchaus unterhaltsam... Mehr gibts nicht zu sagen.<br><br>Ich mochte die Spannbreite an mögichen Enden!',
-        'img/cover/henrystickmin.jpg',
-        'img/sum/henrystickmin.jpg',
-        'D',
-        '2024',
-        '6.3h',
-        '82/82'
-    );
-    
-    addGame(
-        'Dave The Diver',
-        'Ich plane es noch zueende zu spielen, kann gerade noch nicht viel zu sagen außer dass ichs visuell super schön finde.<br><br>Ich hoffe mit der Zeit nehmen die Tutorials ab, ich hab noch das Gefühl, die machen 50% des Spiels aus. Ich erwarte fast, dass das Game auf B Tier landet.',
-        'img/cover/dave.jpg',
-        'img/sum/dave.jpg',
-        'DNF',
-        '2024',
-        '0.6h',
-        '2/43'
-    )
-
-    addGame(
-        'Dishonored 2',
-        '2016 gestartet, Grafikkarte war nicht gut genug. 2019 gestartet, schnell Interesse verloren. 2024 gestartet, und eine geile Zeit gehabt.<br><br>Die Story ist mid, aber nicht der Fokus. Das Gameplay macht verdammt spaß, das Konzept ist gewohnt geil. Das Level Design ist okay/gut aber der Feel und die Welt machen das krass wett.<br><br>Ich hatte immer spaß, hätte mir gewünscht, dass mehr Rätsel drinne sind (Quasi alle Tresor Kombinationen benötigen keine Intelligenz, sondern nur Lesevermögen). Hat super spaß gemacht, die Welt und das Setting leisten aber viel Arbeit',
-        'img/cover/dishonored2.jpg',
-        'img/sum/dishonored2.jpg',
-        'A',
-        '2024',
-        '47.1h',
-        '40/50'
-    )
-
-    addGame(
-        'Citizen Sleeper',
-        'Cyberpunk Game. Eigentlich meins, aber (und das mag jetzt dumm klingen), ich mag nicht so viel lesen :D<br>Das Konzept, dass es ein bisschen Pen and Paper Themed ist, ist geil. Aber ich hab schnell das Interesse verloren. Vllt. spiel ich es noch zueende.',
-        'img/cover/citizensleeper.jpg',
-        'img/sum/citizensleeper.jpg',
-        'DNF',
-        '2024',
-    )
-
-
-    addGame(
-        'Hollow Knight: Silksong',
-        'Die beste Enttäuschung, die ich je gespielt habe. Verdientes A-Tier, aber quasi jeder Aspekt des Games ist schlechter als der Vorgänger. Ich lobe, dass sie was neues probieren wollten, aber das Movement, die Gegner & Bosse, das Kampfsystem insgesamt, wirkt so... unfertig?<br><br>Hollow Knight hat überzeugt mit simplen Mechanics, die man krass ausreizen konnte. Silksong will zu viel. Unterschiedliche Crests, die deine Moves komplett ändern und Tools, die super divers sind führen dazu, dass das Gameplay nicht maßgeschneidert für die Werkzeuge, die man der Spieler:in an die Hand bekommt gemacht wird. Die Spannbreite der Möglichkeiten verwässert das Gameplay.<br><br>Das World Design war gut, dass Hornet redet und Charakter hat hab ich geschätzt, aber anders als Hollow Knight, dass ich direkt 3x durchgespielt hab, hab ich Silksong nach dem ersten Run weggelegt. Das klingt alles sehr negativ, aber es ist trotzdem ein fantastisches Game. Nur deutlicher Rückschritt von Hollow Knight.',
-        'img/cover/silksong.png',
-        'img/sum/silksong.png',
-        'A',
-        '2025',
-        '86.1h',
-        '45/52'
-    );
-
-    addGame(
-        'Peak',
-        'Absolute Peak. Ok, der Joke musste sein.<br><br>Die prämisse ist simpel: Kletter mit deinen Friends auf nen Berg. Aber der Artstyle, die Atmo und vor allem das Push to Talk System bringen das auf so ein Level.',
-        'img/cover/peak.png',
-        'img/sum/peak.png',
-        'B',
-        '2025',
-        '36.9h',
-        '41/54'
-    );
-
-    addGame(
-        'Tony Hawk\'s Pro Skater 3+4',
-        'Kein Spiel in C hab ich länger gespielt. Aber es ist leider, trotz der Zeit, die ich investiert habe, nicht gut.<br><br>Sie haben mit Skitchen eine neue Mechanic eingeführt, und die ist mega scuffed. Die Spine Transfers funktionieren häufig nicht und am schlimmsten: Der Karrieremodus aus THPS4 wurde entfernt. Die Levels und der Vibe haben mies daran gelitten. Egal ob in 2 oder 10 Minuten, die Level fühlen sich extrem leer und herzlos an. Die Missionen sind auch maximal halbherzig geportet worden. Es ist offensichtlich, dass mit möglichst wenig Aufwand möglichst viel Gewinn erzielt werden sollte.<br><br>Schade. Spaß macht es zugegebenermaßen trotzdem.',
-        'img/cover/thps34.png',
-        'img/sum/thps34.png',
-        'C',
-        '2025',
-        '99h',
-        '32/32'
-    );
-
-    addGame(
-        'Beholder: Conductor',
-        'Die Beholder Reihe ist mir mega ans Herz gewachsen. Hier probieren sie mal ein neues Setting aus, mit gewohnten Gameplay Konzepten.<br><br>Es funktioniert klasse, man steigt im Zug auf und ist für zunehmend wichtigere Leute Schaffner. Genauso entwickeln sich die Stakes, das Pacing ist fantastisch. Die Story und Faschismus Analogien gewohnt stark für die Serie.',
-        'img/cover/beholderconductor.png',
-        'img/sum/beholderconductor.png',
-        'B',
-        '2025',
-        '14.4h',
-        '44/44'
-    );
-
-    addGame(
-        'Do No Harm',
-        'Ich nenn so Games gerne "Papers Please Like", wo eine simple Gameplay Loop genommen wird und darum herum ne Story erzählt wird. Das hat Do No Harm perfekt gemacht, die Loop ist klasse, das Arztgame hat spaß gemacht, die Story selbst, bzw. wie um einen herum sich alles entwicklet war gut gezeigt.<br><br>Der Artstyle und die Atmosphäre war auch super. Hat mir spaß gemacht, mein lieblings Lovecraft Game, dass ich dieses Jahr gespielt hab (Und das leider in B :/).',
-        'img/cover/donoharm.png',
-        'img/sum/donoharm.png',
-        'B',
-        '2025',
-        '13.3h',
-        '21/43'
-    );
-
-    addGame(
-        'Class Of 09',
-        'Ich weiß, die zwei Wörter sind extrem cringe, aber der dunkle Humor des Games landet perfekt! Ich hab es mal als White Girl Boondocks beschrieben gehört und das trifft es einfach perfekt.<br><br>Nicole und Jecka sind ein super unterhaltsames Duo und der Humor ist das, was es besonders macht. Als jemand, der 2009 zur Schule ging und genau in die Alterszielgruppe des Games gehört hat es einfach krass gezündet.',
-        'img/cover/classof09.png',
-        'img/sum/classof09.png',
-        'B',
-        '2025',
-        '3.6h'
-    );
-
-    addGame(
-        'Class Of 09: The Re-Up',
-        'Was soll man sagen? Fantastisches Sequel des ersten Parts, ist nur ein Tier weiter unten gelandet, weil wenig neues kam, aber der Humor und die Charaktere war weiterhin einfach fantastisch.<br><br>Again - White Girl Boondocks',
-        'img/cover/classof09reup.png',
-        'img/sum/classof09reup.png',
-        'C',
-        '2025',
-        '4.8h'
-    );
-
-    addGame(
-        'Dispatch',
-        'Ich hab Telltale 2015 Ära vermisst. Klar, das hier ist von adhoc games, aber man merkt den Einfluss stark.<br><br>Das Gameplay ist simpel, aber Game-dienlich, die Story, Astethik und Charaktere alle unglaublich stark und man hat krasse Verbindung zu Robert aufgebaut. Aaron Paul hat das fantastisch gemacht. Das wahre Herz waren aber die Nebencharaktere. Invisigal, Golem, Chase besonders, aber GANZ besonders: Blonde Blazer.',
-        'img/cover/dispatch.jpg',
-        'img/sum/dispatch.jpg',
-        'A',
-        '2025',
-        '38.7h',
-        '36/36'
-    );
-
-    addGame(
-        'Still Wakes The Deep',
-        'Lovecraft Year, WOOO! Das Game war ein guter Film. Die Grafik, Charaktere und Bedrohung war genial. Die Entität, die die Ölinsel heimsucht ist unerklärbar (Checkt meine Lovecraft Box) und der Bodyhorror ist so geil umgesetzt. Das Sounddesign der Monster macht es so geil ekelig.<br><br>Kriegt "nur" C, da es irgendwann echt nur noch Walking Sim war, man die Mechanics der Monster gecheckt hat und keine Anspannung mehr gefühlt hat. Hab mich ggn. Ende, und das obwohl es relativ kurz ist, schon dem Ende entgegengesehnt. Trotzdem: Athmo 10/10!',
-        'img/cover/stillwakesthedeep.jpg',
-        'img/sum/stillwakesthedeep.jpg',
-        'C',
-        '2025',
-        '7.2h',
-        '35/59'
-    );
-
-    addGame(
-        'Grounded 2',
-        'Grounded war sooo gut und charmant, Grounded 2 zeigt in der Alpha gute Zeichen, das gut weiterzuentwickeln. Hab es in B gepackt weil es noch ziemlich unfertig ist, aber ich hab große Hoffnungen.',
-        'img/cover/grounded2.jpg',
-        'img/sum/grounded2.jpg',
-        'B',
-        '2025',
-        '39h'
-    );
-
-    addGame(
-        'Blue Prince',
-        'Dieses Spiel schätzt meine Zeit nicht. Es ist extrem langweilig.<br><br>Man hat eine Vermutung, wie man ein Puzzle löst und muss 3 Stunden die RNG Generation des Hauses testen, um seine Vermutungen zu überprüfen. Und achja, in diesem Run hast du das Item was du brauchst zufälligerweise nicht gefunden. Ups!<br>Ja, fick Roguelike Puzzle Games. Mit dem Genre-Mix kann ich nichts anfangen.',
-        'img/cover/blueprince.jpg',
-        'img/sum/blueprince.jpg',
-        'F',
-        '2025',
-        '7.4h'
-    );
-
-    addGame(
-        'Carto',
-        'Ich halte mich kurz: Carto ist süß, charmant und interessante Puzzle Mechaniken. Aber es ist leider echt boring.<br><br>Pacing ist schwach, das Puzzle Gimmick hat sich schnell abgenutzt und war dann nur noch busywork',
-        'img/cover/carto.jpg',
-        'img/sum/carto.jpg',
-        'D',
-        '2025',
-        '4.5h'
-    );
-
-    addGame(
-        'Clair Obscur: Expedition 33',
-        'Wow... Ich hab den Hype am Anfang verpasst. Das Game kam im Schatten von Oblivion raus. Als ich es dann probiert hab war relativ schnell klar, dass es das beste Spiel des Jahres für mich ist.<br><br>Das Gameplay, das Kampfsystem, die Levels, die Charaktere, die Musik, die Story, blablabla. Ich kann hier ewig lange alle Aspekte des Games aufzählen, aber es hat mich in jeder Perspektive in den Bann gezogen.<br><br>Alle Charaktere im Spiel, egal ob große oder kleine Rolle haben Herz und sind gut geschrieben. Die Story ist das beste, was ich bisher erlebt habe. Ich glaube nichtmal Cyberpunk oder Witcher 3 kommt daran. Das Game reiht sich bei mir genau auf diesem Level ein, ich glaube es ist in meinen Top 5 Games of all Time locker drin.<br><br>Ich freue mich schon, was Sandfall in ein paar Jahren als nächstes zaubert. For those who come after',
-        'img/cover/coe33.jpg',
-        'img/sum/coe33.jpg',
-        'S',
-        '2025',
-        '121.6h',
-        '55/55'
-    );
-
-    addGame(
-        'Rift of the Necrodancer',
-        'Story, Gameplay, Artstyle, Soundtrack? Alles Top! Warum nur in D?<br><br>Stellt sich raus, ich bin weder gut in Rhythmus Games, noch mag ich sie mechanisch besonders. Ich habs ne Chance gegeben, und das Spiel ist safe gut, aber nicht mein Ding.',
-        'img/cover/riftofthenecrodancer.jpg',
-        'img/sum/riftofthenecrodancer.jpg',
-        'D',
-        '2025',
-        '7.7h',
-        '11/35'
-    );
-
-    addGame(
-        'The Elder Scrolls IV: Oblivion Remastered',
-        'Oh man, hab ich mich auf das Game gefreut! Und es hat alles versprochen, was ich mir gewünscht habe. Der Jank, die charmante Welt und das veraltete Leveling System.<br><br>Man mag es Nostalgie nennen, aber ich habe jeden Aspekt, den ich bei anderen Games kritisieren würde geliebt. Das geb ich gerne zu, das Game wär safe nen paar Stufen weiter unten gelandet sonst. Aber die Welt... Sie ist soooo schön. Ich liebe es da zu sein. Kindheitsgame',
-        'img/cover/oblivion.jpg',
-        'img/sum/oblivion.jpg',
-        'A',
-        '2025',
-        '117.3h',
-        '28/60'
-    );
-
-    addGame(
-        'The Shore',
-        'Mein Lovecraft Jahr. Leider kein gutes Game. Der Start fand ich ganz gut, die Atmosphäre und Isolation auf der Insel war schon Eindrucksvoll aber das Spiel ist relativ schnell zu boring walking Sim geworden.<br><br>Lovecraftian Horror lebt für mich auch von Machtlosigkeit und Unwissenheit und der Protagonist hatte im weiteren Spielverlauf einfach beides nicht mehr. Das Ende war gut, alles andere sehr weird.',
-        'img/cover/theshore.jpg',
-        'img/sum/theshore.jpg',
-        'F',
-        '2025',
-        '2.3h',
-        '7/13'
-    );
-
-    addGame(
-        'Call of Cthulhu',
-        'Hab es fürs Setting gekauft und das hat echt abgeliefert! Die Insel ist geil, die Rahmenstory fantastisch, aber das Gameplay und die spezifischen Storybeats waren leider eher schwach. Auch das Stealth/Gunplay hat mich eher gelangweilt.<br><br>Das Worldbuilding selbst war aber richtig gut. Wünschte aber auch, sie hätten sich für stylisierte Grafik entschieden, die schlechte realistische Grafik hat mehr uncanny valley verursacht.',
-        'img/cover/callofcthulhu.jpg',
-        'img/sum/callofcthulhu.jpg',
-        'D',
-        '2025',
-        '8.9h',
-        '37/49'
-    );
-
-    addGame(
-        'Prince of Persia: The Lost Crown',
-        'Das Spiel wäre gefloppt, wenn Movement und Kämpfe nicht so gut wären. Zum Glück sind beide Elemente aber gut. Die Metroidvania Komponenten auch, Weltdesign war echt stark, hatte sogar spaß daran, die Sammelgegenstände in der Welt zu entdecken.<br><br>Die Story war extrem Mid, die Boss Fights größtenteils klasse. Spaßiges Game, gerne mehr!',
-        'img/cover/poptlc.jpg',
-        'img/sum/poptlc.jpg',
-        'B',
-        '2025',
-        '32.5h',
-        '40/40'
-    );
-
-    addGame(
-        'Kindergarten 3',
-        'Kindergarten ist immer ein Banger. Humor und Gameplay immer noch sehr charmant. Auch hier war es ein gutes Wochenendspiel, mehr nicht.<br><br>Finde, sie haben das Konzept jetzt gut ausgeschöpft. Vor allem so die Rahmenstory ist jedes Game gleich, da hab ich schon gemerkt, dass etwas Fatigue eingesetzt hat.',
-        'img/cover/kindergarten3.png',
-        'img/sum/kindergarten3.png',
-        'C',
-        '2025',
-        '10.2h',
-        '21/21'
-    );
-
-    addGame(
-        'Duck Detective: The Ghost of Glamping',
-        'Der zweite Teil der Duck Detective Reihe. Solide, hat spaß gemacht! Die Charaktere waren super charmant und witzig geschrieben, das Rätsel war gut gestellt. Der Artstyle immer noch fantastisch.<br><br>Joa, viel zu loben und wenig auszusetzen aber ich glaub das ist es auch. Sehr average das Spiel. Hatte auf jeden Fall spaß, aber danach quasi nicht mehr dran gedacht.',
-        'img/cover/duckdetective2.png',
-        'img/sum/duckdetective2.png',
-        'C',
-        '2025',
-        '2.4h',
-        '11/11'
-    );
-
-    addGame(
-        'Class of 09: The Flip Side',
-        'Der dritte Teil der Reihe. Hab vorher viele negative Stimmen zu dem Game gehört, dachte mir aber, dass es so schlimm nicht sein kann. Solange der Humor stimmt, bin ich dabei.<br><br>Aber ja, Jecka in der Hauptrolle hat leider nicht ganz gepasst, der Humor des Games war mir viel zu... sexualisiert, was tendenziell okay ist, das hatten die ersten Games ja auch, aber hier war die Pointe recht simpel: "Haha, Sexuelle Anspielung".<br>Hab es leider abgebrochen, auch wenn ich den Vibe der Reihe weiterhin feiere',
-        'img/cover/classof09flipside.png',
-        'img/sum/classof09flipside.png',
-        'DNF',
-        '2025',
-        '0.5h'
-    );
-
-    addGame(
-        'World of Horror',
-        'LEIDER hat mich das Game nicht gepackt. Die Visuals und Lore sind extrem stark, offensichtlich von Junji Ito inspiriert, aber das hat im Endeffekt nicht gereicht. Das Gameplay war unintuitiv, die Storybeats unnachvollziehbar und inkohärent.<br><br>Es gab mir die Vibes als sollte der Mehrwert durch den Style kommen, aber mir schaudert es leider nicht, wenn ich nicht mitkomme. UI auch extrem cluttered. Ich glaub das war eine bewusste Entscheidung, but I did not like it sadly!',
-        'img/cover/worldofhorror.jpg',
-        'img/sum/worldofhorror.jpg',
-        'D',
-        '2025',
-        '3.7h'
-    ),
-
-    addGame(
-        'Static Dread: The Lighthouse',
-        'Man spielt einen Leuchtturmwärter auf einer abgelegenen Insel, der mit übernatürlichen Ereignissen konfrontiert wird. Die Atmosphäre ist dicht und unheimlich, unterstützt durch eine gelungene Soundkulisse und stimmungsvolle Grafiken im Retro-Stil.<br><br>Das Gameplay selbst ist meing größtes Issue. Es ist etwas zäh. Die Schichtarbeit, wie so häufig im echten Leben, bockt leider nicht richtig. Sie dient als Mittel zum Zweck, klar, aber es zieht sich. Ich hab nie mehr als zwei Nächte (In Game) in Folge gespielt.',
-        'img/cover/staticdread.jpg',
-        'img/sum/staticdread.jpg',
-        'C',
-        '2025',
-        '7.7h'
-    )
-
-    addGame(
-        'Verho: Curse of Faces',
-        'Ich hab es am Release Day random in meiner Frontseite entdeckt und dachte mir "Why not? Sieht schnieke aus!" Hatte wenig Erwartungen, außer dass es ein bisschen diesen Dark Souls Itch scratched. Und das tat es.<br><br>Die Welt zu erkunden war mein Highlight. Die Asthetik ist so gut umgesetzt, die PS2-Grafik extrem gut eingebettet. Die Kämpfe schaffen es auch trotz bewusst gewählten Stil sehr responsive und gut designed zu sein. Die Story hat micha auch immens abgeholt, obwohl es recht simpel war a la "Verfluchtes Land - Breche den Fluch", die Lore der Welt war extrem Deep.',
-        'img/cover/verho.jpg',
-        'img/sum/verho.jpg',
-        'A',
-        '2025',
-        '19.6h',
-        '89/99'
-    );
-
-    addGame(
-        'The Drifter',
-        'Empfehlung eines Arbeitskollegen, noch nicht zu gekommen',
-        'img/cover/thedrifter.png',
-        'img/sum/thedrifter.png',
-        'DNF',
-        '2026'
-    )
-
-    addGame(
-        'SANABI',
-        'Habe lange zwischen S & A geschwankt, aber die Story hat mich komplett mitgenommen. Selten, dass man bei High-Intensity Platformer Games weinen muss.<br><br>Das Gameplay macht krass süchtig, das Platforming ist extrem gut umgesetzt und ich könnte den ganzen Tag weitere Levlels spielen. Die Story, die ich anfangs ehrlicherweise als Unterbrechung des Gameplays wahrgenommen habe, hat mich doch recht schnell abgeholt. Die Dynamik zwischen dem Hauptcharakter und Mari ist fantastisch, unterhaltsam und lieb. Mari selbst ist fantastisch geschrieben. Ihre Energie war erfrischend und die Backstory während des Spiels zu entdecken hat ihr nochmal so viel verdiente Tiefe gegeben.<br><br>Das Ende des Spiels hab ich ein bisschen kommen sehen, aber nicht im Sinne "Vorhersehbar", sondern eher Kategorie "Gutes Foreshadowing, fantastische Resolution". Wärs nicht Cyberpunk, hätte ich es wohl aber in A gepackt lul',
-        'img/cover/sanabi.jpg',
-        'img/sum/sanabi.jpg',
-        'S',
-        '2025',
-        '14.2h',
-        '14/21'
-    )
+const myGamesList = [
+    {
+        title: 'Hollow Knight', 
+        review: 'Als ich angefangen habe Hollow Knight zu spielen war die erste Emotion, die ich dabei gefühlt habe, Frustration. Mir war direkt zum Start klar, dass das Spiel quasi für mich gemacht war und ich war enorm frustriert, es nicht viel früher gespielt zu haben. Umso besser, dass es dieses Jahr so weit war.<br><br>Hollow Knight ist simpel. Nicht im Sinne, dass es Leicht wäre, aber dass alle Mechanics super intuitiv sind und die Perfektion und Kombination aller Basics die größte Herausforderung ist.<br><br>Es gibt kein Aspekt, den ich als Schwäche ausmachen kann. Lore, World & Boss Design, Visuals, Kampf- & Skillsystem. Alles fühlt sich enorm optimiert an. Vor allem das Map Design. Es macht anfangs einen sehr linearen Eindruck aber irgendwann steht man fast ziellos rum. Aber schnell merkt man, dass jedes Ziel mehrere Wege hat und man für "Zielloses" Erkunden belohnt wird.<br><br>Anders als Viele fromsoft Games gibt es zudem einen Boss Replay Mode, und jedes "Souls-Like" verdient so etwas. Ist jetzt auch das zweite Jahr in Folge, dass ein Spiel mit Boss Replay Mode mein Spiel des Jahres wird (Sekiro :*)',
+        coverPath: 'img/cover/hollowknight.jpg', 
+        sumPath: 'img/sum/hollowknight.jpg', 
+        tier: 'S',
+        year: '2024',
+        hoursPlayed: 101.5,
+        achievements: '62/63',
+        tierScore: 85,
+        categories: ['Metroidvania', 'Plattformer', 'Soulslike', 'Schwer', '2D', 'Indie']
+    },
+    {
+        title: 'Firewatch',
+        review: 'Emotional, Visuell und von der Story ein wahnsinnig schönes Spiel. Aber mehr auch nicht.<br><br>Das Ende, Spoiler, hat mich ein bisschen enttäuscht und unterwältigt. Es passt wohl zum Motiv des Spiels, aber das Mysterium des Spiels war viel zu spannend für diese Konklusion.<br>Die Charaktere sind fantastisch geschrieben und vertont. Einer der besseren "Walking-Simulator" und ehrlich gesagt auch ein gutes Horror-Spiel. Zumindest fühlte es sich oft so an, ich weiß nicht, ob das so beabsichtigt war.<br><br>Aber ja, das Game hatte das Problem, dass die Red Herrings, die es aufgestellt hat, spannender als die tatsächliche Story war.',
+        coverPath: 'img/cover/firewatch.jpg',
+        sumPath: 'img/sum/firewatch.jpg',
+        tier: 'C',
+        year: '2024',
+        hoursPlayed: 5.5,
+        achievements: '10/10',
+        tierScore: 50,
+        categories: ['Abenteuer', 'Atmosphärisch', 'Komplexe Handlung', 'Mystery']
+    },
+    {
+        title: 'Nine Sols', 
+        review: 'Hab es direkt nach Hollow Knight begonnen und konnte mich nicht reinarbeiten, da es zu ähnlich war und doch so anders.<br>Ein Paar Monate später hab ich es lieben gelernt.<br><br>Es ist offensichtlich von Sekiro und Hollow Knight inspiriert, weiß diese Inspiration aber auch umzusetzen, dass es ein spaßiges Kampfsystem ermöglicht. Die Map, auch wenn anfangs unintuitiv, ist auch fantastisch gestaltet.<br><br>Visuell ist es wahrscheinlich das schönste Spiel was ich dieses Jahr gespielt habe. Die Farben, die handgezeichneten Paneele, alles pure Klasse.<br>Die Story ist besser erzählt als Sekiro und Hollow Knight, emotional auch sehr viel ansprechender. Während ich Yi nicht immer mochte, war er trotzdem ein fantastischer Hauptcharakter.<br><br>Meine Überraschung des Jahres, mein Lieblingsbossfight dieses Jahr, insgesamt einfach geil. Replayability ist leider eingeschränkt geil mit den vielen Cutscenes und keine Möglichkeit Bosse zu replayen. Da ist Hollow Knight vorraus.', 
+        coverPath: 'img/cover/ninesols.jpg', 
+        sumPath: 'img/sum/ninesols.jpg',
+        tier: 'S',
+        year: '2024',
+        hoursPlayed: 47.9,
+        achievements: '35/35',
+        tierScore: 80,
+        categories: ['Metroidvania', 'Soulslike', '2D', 'Plattformer', 'Schwer', 'Indie']
+    },
+    {
+        title: 'Cyberpunk Phantom Liberty', 
+        review: 'Alles Cyberpunk bin ich total voreingenommen. Ein fantasischer DLC, der Cyberpunk Spy Thriller perfekt umsetzt. Manchmal zog es sich leicht, aber fantastisches Gameplay.<br><br>Nur die Charaktere fand ich teilweise anstrengend, was mir auch leider das Ende etwas made gemacht hat, da ich nicht ganz den gewünschten emotionalen Zugang hatte und die gewünschte Reaktion ausgeblieben ist.<br><br>Ein tolles neues Kapitel aber im Cyberpunk Universum, ich werde es immer lieben.', 
+        coverPath: 'img/cover/cp_pl.jpg', 
+        sumPath: 'img/sum/cp_pl.jpg', 
+        tier: 'A',
+        year: '2024',
+        tierScore: 50,
+        categories: ['Rollenspiel', 'Sexuelle Inhalte', 'Open World', 'Cyberpunk']
+    },
+    {
+        title: 'Dredge', 
+        review: 'Auch eine Überraschung für mich. Lovecraftian Horror ist geil und dieses Spiel vereint "Cozy-Game" und existentielle Angst perfekt.<br><br>Das Spiel hatte leichte Pacing Probleme, da nach ca. 50% wenig neue Mechanics hinzukommen und man nur noch die Story durchgerusht wird aber vllt. hab ich am Anfang auch zu viel gegrindet.<br><br>Story war fantastisch, das Spiel hat wahrscheinlich, dicker Spoiler an der Stelle, den besten Plot Twist in einem Videospiel, den ich jemals gesehen hab. Ich hab die Themes und das simple Gameplay einfach gelibet', 
+        coverPath: 'img/cover/dredge.jpg', 
+        sumPath: 'img/sum/dredge.jpg', 
+        tier: 'A',
+        year: '2024',
+        hoursPlayed: 28.2,
+        achievements: '60/60',
+        tierScore: 75,
+        categories: ['Erkundung', 'Angeln', 'Lovecraft', 'Open World', 'Abenteuer']
+    },
+    {
+        title: 'Ghost Trick: Phantom Detective', 
+        review: 'Ich liebe Puzzlespiele mit Twists. Den Core Gameplay Loop von Ghost Trick muss man mögen, sonst hat man keinen Spaß, aber bei mir hat er auf jeden Fall gezündet.<br><br>Die Story und Charakter sind fantastisch geschrieben, dass man auch jenseits des normalen Bedürfnis, das Spiel durchzuspielen, ständig motiviert ist, die übergeordnete Story zu lösen. Das Spiel ist fantastisch geschrieben, man sieht die Twists und Auflösungen eigentlich selten kommen, aber sie ergeben immer Sinn und tragen zu dem tollen Erlebnis bei', 
+        coverPath: 'img/cover/ghosttrick.jpg', 
+        sumPath: 'img/sum/ghosttrick.jpg', 
+        tier: 'A',
+        year: '2024',
+        hoursPlayed: 19.1,
+        achievements: '30/30',
+        tierScore: 34,
+        categories: ['Rätsel', 'Abenteuer', 'Mystery', 'Komplexe Handlung', 'Detektiv']
+    },
+    {
+        title: 'Signalis', 
+        review: 'Survival Horror a la Silent Hill sind auch nicht mein Ding (Cyberpunk aber schon, also hat das Game ne Chance von mir bekommen). Dafür hab ich dieses Spiel krass lieben gelernt.<br><br>Das Spiel wirkt super optimiert, alle Mechanics funktioneren klasse zusammen und während ich die Story auch nach ganz vielen Youtube Sessions nicht ganz verstanden hab, sind die Motive des Spiels mir überraschend nahe gegangen.<br>Einsamkeit, Schicksal. Die Dynamik des Main Characters mit Ariane ist einfach nur traurig, perfekt und wunderschön.', 
+        coverPath: 'img/cover/signalis.jpg', 
+        sumPath: 'img/sum/signalis.jpg',
+        tier: 'B',
+        year: '2024',
+        hoursPlayed: 14.3,
+        achievements: '11/13',
+        tierScore: 50,
+        categories: ['Survival-Horror', 'Psycho-Horror', 'Weibliche Hauptfigur', 'Sci-Fi']
+    },
+    {
+        title: "Tony Hawk's Underground", 
+        review: 'Die Tony Hawk Reihe war ein Pfeiler meiner Kindheit. Dieser Teil ist mir aber immer entwichen, einfach weil meine Eltern mir ihn nie gekauft haben. Der Story Mode ist einer der besten der Reihe und mal was komplett neues.<br><br>Als THUG2 Fan war das Gameplay nichts neues/überraschendes aber es hat einfach wahnsinnig spaß gemacht. Und das war eig die Hauptsache, mehr ist mir vom Game nicht hängen geblieben.<br><br>Fick Eric Sparrow.', 
+        coverPath: 'img/cover/thug.jpg', 
+        sumPath: 'img/sum/thug.jpg', 
+        tier: 'B',
+        year: '2024',
+        tierScore: 50,
+        categories: ['Sport', 'Skateboarden', 'Mehrspieler', 'Einzelspieler', 'Arcade']
+    },
+    {
+        title: 'OlliOlli World', 
+        review: 'Ich hatte seitdem ich Tony Hawk Games gespielt hab immer Probleme mich auf andere Skategames einzulassen.<br>OlliOlli World war die Ausnahme. Es ist eins dieser "Easy to learn, hard to master" Games und die Mechanics, der Flow der Levels fühlt sich einfach geil und befriedigend an.<br><br>Der Artstyle, der Soundtrack. Muy Bueno.<br>Einzige, leider große Schwäche: Nachdem Manuals eingefügt werden fühlt sich jedes Level an wie ein "Combo durchs ganze Level" und das nimmt extrem Geschwindigeit aus dem Game, da man immer restartet. Insgesamt, Pacing Probleme sind ein Issue, das Game hätte gern 20% kürzer sein können.', 
+        coverPath: 'img/cover/olliolli.jpg', 
+        sumPath: 'img/sum/olliolli.jpg', 
+        tier: 'B',
+        year: '2024',
+        hoursPlayed: 16.8,
+        achievements: '25/54',
+        tierScore: 50,
+        categories: ['Sport', 'Präzisionsplatformer', 'Skateboarden', '2D-Plattformer']
+    },
+    {
+        title: 'Burnout Paradise', 
+        review: 'Was soll man dazu sagen. Mies satisfying das Game. Die Fahrmechanics sind intuitiv und fühlen sich gut an. Optisch und von Feedback macht das Game einiges her. Der Soundtrack ist ideal.<br><br>Einfach ein Game, das man sich gerne nebenbei anmacht und zockt. Cooles Arcade Game, bin ein großer Fan von Open World Racer Games.', 
+        coverPath: 'img/cover/burnoutparadise.jpg', 
+        sumPath: 'img/sum/burnoutparadise.jpg', 
+        tier: 'C',
+        year: '2024',
+        hoursPlayed: 39.6,
+        achievements: '32/56',
+        tierScore: 50,
+        categories: ['Rennspiel', 'Action', 'Arcade', 'Mehrspieler', 'Abenteuer']
+    },
+    {
+        title: 'Duck Detective: The Secret Salami', 
+        review: 'Detektivspiele sind gerade ein großes Ding für mich. Ich such immer nach idealen Games. Spiele sind leider selten so frei, dass man komplett falsch liegen kann bei einem Rätsel, aber trotzdem weiterspielt.<br><br>Duck Detective macht das auch nicht (die Einleitung hat vllt anderes erwarten lassen) aber ist mies charmant. Es findet ein gutes Verhältnis, dass man wirklich selbst nachdenken muss um ein Fall zu lösen, ist aber manchmal doch sehr künstlich im Prozess der Detektivarbeit.<br>Insgesamt super charmant, aber das wars wohl.', 
+        coverPath: 'img/cover/duckdetective.jpg', 
+        sumPath: 'img/sum/duckdetective.jpg', 
+        tier: 'C',
+        year: '2024',
+        hoursPlayed: 1.9,
+        achievements: '7/7',
+        tierScore: 50,
+        categories: ['Detektiv', 'Ermittlung', 'Gelegenheitsspiel', 'Kurz', 'Niedlich']
+    },
+    {
+        title: 'Dead by Daylight', 
+        review: 'Asymettrischer Mulitplayer ist immer eine Herausforderung, Dead By Daylight macht das aktuell glaube ganz gut.<br><br>Die Runden machen spaß, auch wenn man verliert, und es wirkt insgesamt einfach wie ein super Spiel, dass man mit Friends zocken kann. Muss ich häufiger spielen', 
+        coverPath: 'img/cover/dbd.jpg', 
+        sumPath: 'img/sum/dbd.jpg', 
+        tier: 'C',
+        year: '2024',
+        hoursPlayed: 15.5,
+        achievements: '18/288',
+        tierScore: 50,
+        categories: ['Horror', 'Mehrspieler', 'Survival-Horror', 'Online-Koop', 'Koop']
+    },
+    {
+        title: 'Pony Island', 
+        review: 'Solide. Ich hab Inscryption vor diesem Spiel gespielt und demnach hohe Erwartungen gehabt. Man sieht offensichtlich ähnliche Konzepte, wie bei Inscryption, aber alles fühlte sich etwas unausgereifter an.<br><br>Das Core Gameplay macht spaß und auch die Story war gut, aber ich merkte, wie mir nichts davon länger im Kopf blieb. Ich kann nichtmal Kritik formulieren, das Spiel war einfach... ganz gut?', 
+        coverPath: 'img/cover/ponyisland.jpg', 
+        sumPath: 'img/sum/ponyisland.jpg', 
+        tier: 'D',
+        year: '2024',
+        hoursPlayed: 2.3,
+        achievements: '12/20',
+        tierScore: 50,
+        categories: ['Rätsel', 'Indie', 'Psycho-Horror', 'Pixel-Art', 'Hacking', 'Horror']
+    },
+    {
+        title: 'Resident Evil 2', 
+        review: 'Hier kann ich mich kurz und knackig halten. Nicht meine Genre, hatte trotzdem Spaß.<br><br>Vor allem die Metroidvania Komponenten fand ich klasse. Die Map zu lernen hat sich gut und intuitiv angefühlt. Wünschte, es hätte noch mehr Content im RCPD gegeben.<br>Weiß nicht, ob ich den Nemesis mochte, da ich vor allem die Erkundung der Polizeistation gut fand und die nach seiner Einführung eher rückgestellte Prio eingenommen hat.', 
+        coverPath: 'img/cover/re2.jpg', 
+        sumPath: 'img/sum/re2.jpg',
+        tier: 'D',
+        year: '2024',
+        hoursPlayed: 11.5,
+        achievements: '18/44',
+        tierScore: 50,
+        categories: ['Zombies', 'Survival-Horror', 'Einzelspieler', 'Horror', 'Remake']
+    },
+    {
+        title: 'Balatro', 
+        review: 'Roguelite. Hätte ich das mal früher gewusst. Insgesamt besser als ein Otxo, optisch auch mein Ding.<br>Aber mehr als witzige Unterhaltung nebenbei ist das Spiel für mich auch nicht. Man merkt dem Spiel aber Qualität an und ich hatte eigentlich immer Spaß.<br><br>-> 20h später, find ichs echt toll. So Roguelite ist es gar nicht und die Mechanics sind super optimiert. Es macht einfach spaß neue Runs zu spielen und mit neuen Strats versuchen so weit wie möglich zu kommen. I love it', 
+        coverPath: 'img/cover/balatro.jpg', 
+        sumPath: 'img/sum/balatro.jpg',
+        tier: 'A',
+        year: '2024',
+        hoursPlayed: 166.3,
+        achievements: '26/31',
+        tierScore: 60,
+        categories: ['Kartenspiel', 'Roguelike', 'Roguelike-Deckbuilding', 'Strategie']
+    },
+    {
+        title: 'Palworld', 
+        review: 'Survival Games sind ein Genre, das für mich relativ Hit or Miss ist. Grounded bspw. ist fantastisch und macht vieles richtig, während ARK für mich z.B. einfach überladen und aufgeblasen ist.<br><br>Palworld fällt eher in die letztere Kategorie. Abseits der offensichtlichen Pokémon "Inspiration" merkt man, dass das Spiel nahezu keine Survival Mechanics neu erfindet.<br>Insgesamt unglaublich langweilig', 
+        coverPath: 'img/cover/palworld.jpg', 
+        sumPath: 'img/sum/palworld.jpg', 
+        tier: 'F',
+        year: '2024',
+        tierScore: 50,
+        categories: ['Open World', 'Survival', 'Kreaturensammler', 'Mehrspieler']
+    },
+    {
+        title: 'Otxo', 
+        review: 'Eine wertvolle Entdeckung, die ich dieses Jahr gemacht habe ist, dass Roguelites nichts für mich sind.<br><br>Das Spiel nimmt viele Aspekte von Hotline Miami, die ich geil fand, und schafft es trotzdem sich unglaublich unzufriedenstellend zu spielen.<br>Hatte das Gefühl, viele Mechanics konkurrieren gegeneinander. Bspw. ist es schnell und adrenalingeladen, aber hat Bullet Time und nimmt damit die Geschwindigkeit aus dem Spiel.<br><br>Hab nicht zu Ende gespielt und werde das auch nicht nachholen. Packt mich einfach nicht, ist aber wahrscheinlich ganz gut.',
+        coverPath: 'img/cover/otxo.jpg', 
+        sumPath: 'img/sum/otxo.jpg', 
+        tier: 'DNF',
+        year: '2024',
+        hoursPlayed: 0.6,
+        achievements: '2/18',
+        tierScore: 50,
+        categories: ['Action-Roguelike', 'Vogelperspektive-Shooter', 'Gewalt', 'Schnell']
+    },
+    {
+        title: 'Catherine', 
+        review: 'Die Story und Themes fand ich eigentlich super, aber das Gameplay war absolut nicht mein Fall.<br><br>Die Puzzles ziehen sich und sind unglaublich repetitiv und langweilig. Story war gut genug, dass ich mich danach eingelesen hab.', 
+        coverPath: 'img/cover/catherine.jpg', 
+        sumPath: 'img/sum/catherine.jpg', 
+        tier: 'DNF',
+        year: '2024',
+        tierScore: 50
+    },
+    {
+        title: 'Chants of Sennaar',
+        review: 'Wow. Ich hätte das auch in A packen können, aber dafür war leider nicht genug Content da. Es hatte ideale Puzzle/Detective Mechanics und war optisch einfach nur atemberaubend.<br><br>Sprachen zu lernen damit war ein cooler Twist und ich hab die Überforderung, ganz viele Wörter zu lernen, ohne die anwenden zu können, geliebt. Es war wahrscheinlich mein Puzzle Highlights dieses Jahr, aber ich glaube ich hab an das Genre vllt. unrealisitsche Standards. Am liebsten würde ich ein Detective Game spielen wo man in den ersten 30 Minuten einen Fehler macht und das bis zum Ende des Games nicht rausbekommt :D',
+        coverPath: 'img/cover/chantsofsennaar.jpg',
+        sumPath: 'img/sum/chantsofsennaar.jpg',
+        tier: 'B',
+        year: '2024',
+        hoursPlayed: 9.3,
+        achievements: '25/25',
+        tierScore: 50,
+        categories: ['Rätsel', 'Abenteuer', 'Einzelspieler', 'Indie', 'Farbenfroh']
+    },
+    {
+        title: 'The Dark Pictures: House of Ashes',
+        review: 'Ich mag das Konzept, das Game fand ich aber von der Story und den Characters bisher das schwächste Game des Entwicklers. Nur Jason war ein interessanter Charakter, die anderen waren gefühlt nur überspitzte Karikaturen.<br><br>Ich hatte spaß, die Lore zu checken, aber es taten mir trotzdem zu viele Fragezeichen auf. Hat spaß gemacht, aber hängen geblieben ist wenig. Postman Alpha Out',
+        coverPath: 'img/cover/hoa.jpg',
+        sumPath: 'img/sum/hoa.jpg',
+        tier: 'D',
+        year: '2024',
+        tierScore: 50,
+        categories: ['Bedeutsame Entscheidungen', 'Horror', 'Verschiedene Enden']
+    },
+    {
+        title: 'The Henry Stickmin Collection',
+        review: 'Hab nix auszusetzen an dem Game. Mechanics sind sehr basich, Quali ist wechselhaft aber es war durchaus unterhaltsam... Mehr gibts nicht zu sagen.<br><br>Ich mochte die Spannbreite an mögichen Enden!',
+        coverPath: 'img/cover/henrystickmin.jpg',
+        sumPath: 'img/sum/henrystickmin.jpg',
+        tier: 'D',
+        year: '2024',
+        hoursPlayed: 6.3,
+        achievements: '82/82',
+        tierScore: 50,
+        categories: ['Witzig', 'Verschiedene Enden', 'Choose Your Own Adventure']
+    },
+    {
+        title: 'Dave The Diver',
+        review: 'Ich plane es noch zueende zu spielen, kann gerade noch nicht viel zu sagen außer dass ichs visuell super schön finde.<br><br>Ich hoffe mit der Zeit nehmen die Tutorials ab, ich hab noch das Gefühl, die machen 50% des Spiels aus. Ich erwarte fast, dass das Game auf B Tier landet.',
+        coverPath: 'img/cover/dave.jpg',
+        sumPath: 'img/sum/dave.jpg',
+        tier: 'DNF',
+        year: '2024',
+        hoursPlayed: 0.6,
+        achievements: '2/43',
+        tierScore: 50,
+        categories: ['Pixel-Art', 'Management', 'Gelegenheitsspiel', 'Abenteuer', '2D']
+    },
+    {
+        title: 'Dishonored 2',
+        review: '2016 gestartet, Grafikkarte war nicht gut genug. 2019 gestartet, schnell Interesse verloren. 2024 gestartet, und eine geile Zeit gehabt.<br><br>Die Story ist mid, aber nicht der Fokus. Das Gameplay macht verdammt spaß, das Konzept ist gewohnt geil. Das Level Design ist okay/gut aber der Feel und die Welt machen das krass wett.<br><br>Ich hatte immer spaß, hätte mir gewünscht, dass mehr Rätsel drinne sind (Quasi alle Tresor Kombinationen benötigen keine Intelligenz, sondern nur Lesevermögen). Hat super spaß gemacht, die Welt und das Setting leisten aber viel Arbeit',
+        coverPath: 'img/cover/dishonored2.jpg',
+        sumPath: 'img/sum/dishonored2.jpg',
+        tier: 'A',
+        year: '2024',
+        hoursPlayed: 47.1,
+        achievements: '40/50',
+        tierScore: 55,
+        categories: ['Schleichspiel', 'Egoperspektive', 'Assassinen', 'Action', 'Magie']
+    },
+    {
+        title: 'Citizen Sleeper',
+        review: 'Cyberpunk Game. Eigentlich meins, aber (und das mag jetzt dumm klingen), ich mag nicht so viel lesen :D<br>Das Konzept, dass es ein bisschen Pen and Paper Themed ist, ist geil. Aber ich hab schnell das Interesse verloren. Vllt. spiel ich es noch zueende.',
+        coverPath: 'img/cover/citizensleeper.jpg',
+        sumPath: 'img/sum/citizensleeper.jpg',
+        tier: 'DNF',
+        year: '2024',
+        tierScore: 50,
+        categories: ['Rollenspiel', 'Dialogreich', 'Komplexe Handlung', 'Würfel']
+    },
+    {
+        title: 'Hollow Knight: Silksong',
+        review: 'Die beste Enttäuschung, die ich je gespielt habe. Verdientes A-Tier, aber quasi jeder Aspekt des Games ist schlechter als der Vorgänger. Ich lobe, dass sie was neues probieren wollten, aber das Movement, die Gegner & Bosse, das Kampfsystem insgesamt, wirkt so... unfertig?<br><br>Hollow Knight hat überzeugt mit simplen Mechanics, die man krass ausreizen konnte. Silksong will zu viel. Unterschiedliche Crests, die deine Moves komplett ändern und Tools, die super divers sind führen dazu, dass das Gameplay nicht maßgeschneidert für die Werkzeuge, die man der Spieler:in an die Hand bekommt gemacht wird. Die Spannbreite der Möglichkeiten verwässert das Gameplay.<br><br>Das World Design war gut, dass Hornet redet und Charakter hat hab ich geschätzt, aber anders als Hollow Knight, dass ich direkt 3x durchgespielt hab, hab ich Silksong nach dem ersten Run weggelegt. Das klingt alles sehr negativ, aber es ist trotzdem ein fantastisches Game. Nur deutlicher Rückschritt von Hollow Knight.',
+        coverPath: 'img/cover/silksong.png',
+        sumPath: 'img/sum/silksong.png',
+        tier: 'A',
+        year: '2025',
+        hoursPlayed: 86.1,
+        achievements: '45/52',
+        tierScore: 70,
+        categories: ['Metroidvania', 'Soulslike', 'Guter Soundtrack', 'Schwer', 'Indie']
+    },
+    {
+        title: 'Peak',
+        review: 'Absolute Peak. Ok, der Joke musste sein.<br><br>Die prämisse ist simpel: Kletter mit deinen Friends auf nen Berg. Aber der Artstyle, die Atmo und vor allem das Push to Talk System bringen das auf so ein Level.',
+        coverPath: 'img/cover/peak.png',
+        sumPath: 'img/sum/peak.png',
+        tier: 'B',
+        year: '2025',
+        hoursPlayed: 36.9,
+        achievements: '41/54',
+        tierScore: 50,
+        categories: ['Mehrspieler', 'Koop', 'Online-Koop', 'Physik', 'Abenteuer', '3D']
+    },
+    {
+        title: 'Tony Hawk\'s Pro Skater 3+4',
+        review: 'Kein Spiel in C hab ich länger gespielt. Aber es ist leider, trotz der Zeit, die ich investiert habe, nicht gut.<br><br>Sie haben mit Skitchen eine neue Mechanic eingeführt, und die ist mega scuffed. Die Spine Transfers funktionieren häufig nicht und am schlimmsten: Der Karrieremodus aus THPS4 wurde entfernt. Die Levels und der Vibe haben mies daran gelitten. Egal ob in 2 oder 10 Minuten, die Level fühlen sich extrem leer und herzlos an. Die Missionen sind auch maximal halbherzig geportet worden. Es ist offensichtlich, dass mit möglichst wenig Aufwand möglichst viel Gewinn erzielt werden sollte.<br><br>Schade. Spaß macht es zugegebenermaßen trotzdem.',
+        coverPath: 'img/cover/thps34.png',
+        sumPath: 'img/sum/thps34.png',
+        tier: 'C',
+        year: '2025',
+        hoursPlayed: 99.0,
+        achievements: '32/32',
+        tierScore: 50,
+        categories: ['Sport', 'Skateboarden', 'Arcade', 'Charakteranpassung', '3D']
+    },
+    {
+        title: 'Beholder: Conductor',
+        review: 'Die Beholder Reihe ist mir mega ans Herz gewachsen. Hier probieren sie mal ein neues Setting aus, mit gewohnten Gameplay Konzepte.<br><br>Es funktioniert klasse, man steigt im Zug auf und ist für zunehmend wichtigere Leute Schaffner. Genauso entwickeln sich die Stakes, das Pacing ist fantastisch. Die Story und Faschismus Analogien gewohnt stark für die Serie.',
+        coverPath: 'img/cover/beholderconductor.png',
+        sumPath: 'img/sum/beholderconductor.png',
+        tier: 'B',
+        year: '2025',
+        hoursPlayed: 14.4,
+        achievements: '44/44',
+        tierScore: 50,
+        categories: ['Politiksimulation', 'Bedeutsame Entscheidungen', 'Dystopie']
+    },
+    {
+        title: 'Do No Harm',
+        review: 'Ich nenn so Games gerne "Papers Please Like", wo eine simple Gameplay Loop genommen wird und darum herum ne Story erzählt wird. Das hat Do No Harm perfekt gemacht, die Loop ist klasse, das Arztgame hat spaß gemacht, die Story selbst, bzw. wie um einen herum sich alles entwicklet war gut gezeigt.<br><br>Der Artstyle und die Atmosphäre war auch super. Hat mir spaß gemacht, mein lieblings Lovecraft Game, dass ich dieses Jahr gespielt hab (Und das leider in B :/).',
+        coverPath: 'img/cover/donoharm.png',
+        sumPath: 'img/sum/donoharm.png',
+        tier: 'B',
+        year: '2025',
+        hoursPlayed: 13.3,
+        achievements: '21/43',
+        tierScore: 50,
+        categories: ['Lovecraft', 'Medizinische Simulation', 'Komplexe Handlung', '3D']
+    },
+    {
+        title: 'Class Of 09',
+        review: 'Ich weiß, die zwei Wörter sind extrem cringe, aber der dunkle Humor des Games landet perfekt! Ich hab es mal als White Girl Boondocks beschrieben gehört und das trifft es einfach perfekt.<br><br>Nicole und Jecka sind ein super unterhaltsames Duo und der Humor ist das, was es besonders macht. Als jemand, der 2009 zur Schule ging und genau in die Alterszielgruppe des Games gehört hat es einfach krass gezündet.',
+        coverPath: 'img/cover/classof09.png',
+        sumPath: 'img/sum/classof09.png',
+        tier: 'B',
+        year: '2025',
+        hoursPlayed: 3.6,
+        tierScore: 50,
+        categories: ['Humor', 'Choose Your Own Adventure', 'Gelegenheitsspiel', '2D']
+    },
+    {
+        title: 'Class Of 09: The Re-Up',
+        review: 'Was soll man sagen? Fantastisches Sequel des ersten Parts, ist nur ein Tier weiter unten gelandet, weil wenig neues kam, aber der Humor und die Charaktere war weiterhin einfach fantastisch.<br><br>Again - White Girl Boondocks',
+        coverPath: 'img/cover/classof09reup.png',
+        sumPath: 'img/sum/classof09reup.png',
+        tier: 'C',
+        year: '2025',
+        hoursPlayed: 4.8,
+        tierScore: 50,
+        categories: ['Visual Novel', 'Dark Humor', 'Humor', 'Weibliche Hauptfigur']
+    },
+    {
+        title: 'Dispatch',
+        review: 'Ich hab Telltale 2015 Ära vermisst. Klar, das hier ist von adhoc games, aber man merkt den Einfluss stark.<br><br>Das Gameplay ist simpel, aber Game-dienlich, die Story, Astethik und Charaktere alle unglaublich stark und man hat krasse Verbindung zu Robert aufgebaut. Aaron Paul hat das fantastisch gemacht. Das wahre Herz waren aber die Nebencharaktere. Invisigal, Golem, Chase besonders, aber GANZ besonders: Blonde Blazer.',
+        coverPath: 'img/cover/dispatch.jpg',
+        sumPath: 'img/sum/dispatch.jpg',
+        tier: 'A',
+        year: '2025',
+        hoursPlayed: 38.7,
+        achievements: '36/36',
+        tierScore: 65,
+        categories: ['Bedeutsame Entscheidungen', 'Komplexe Handlung', 'Nacktheit']
+    },
+    {
+        title: 'Still Wakes The Deep',
+        review: 'Lovecraft Year, WOOO! Das Game war ein guter Film. Die Grafik, Charaktere und Bedrohung war genial. Die Entität, die die Ölinsel heimsucht ist unerklärbar (Checkt meine Lovecraft Box) und der Bodyhorror ist so geil umgesetzt. Das Sounddesign der Monster macht es so geil ekelig.<br><br>Kriegt "nur" C, da es irgendwann echt nur noch Walking Sim war, man die Mechanics der Monster gecheckt hat und keine Anspannung mehr gefühlt hat. Hab mich ggn. Ende, und das obwohl es relativ kurz ist, schon dem Ende entgegengesehnt. Trotzdem: Athmo 10/10!',
+        coverPath: 'img/cover/stillwakesthedeep.jpg',
+        sumPath: 'img/sum/stillwakesthedeep.jpg',
+        tier: 'C',
+        year: '2025',
+        hoursPlayed: 7.2,
+        achievements: '35/59',
+        tierScore: 50,
+        categories: ['Horror', 'Lovecraft', 'Psycho-Horror', 'Blut und Verstümmelung']
+    },
+    {
+        title: 'Grounded 2',
+        review: 'Grounded war sooo gut und charmant, Grounded 2 zeigt in der Alpha gute Zeichen, das gut weiterzuentwickeln. Hab es in B gepackt weil es noch ziemlich unfertig ist, aber ich hab große Hoffnungen.',
+        coverPath: 'img/cover/grounded2.jpg',
+        sumPath: 'img/sum/grounded2.jpg',
+        tier: 'B',
+        year: '2025',
+        hoursPlayed: 39.0,
+        tierScore: 50,
+        categories: ['Survival', 'Mehrspieler', 'Abenteuer', 'Basenbau', 'Koop']
+    },
+    {
+        title: 'Blue Prince',
+        review: 'Dieses Spiel schätzt meine Zeit nicht. Es ist extrem langweilig.<br><br>Man hat eine Vermutung, wie man ein Puzzle löst und muss 3 Stunden die RNG Generation des Hauses testen, um seine Vermutungen zu überprüfen. Und achja, in diesem Run hast du das Item was du brauchst zufälligerweise nicht gefunden. Ups!<br>Ja, fick Roguelike Puzzle Games. Mit dem Genre-Mix kann ich nichts anfangen.',
+        coverPath: 'img/cover/blueprince.jpg',
+        sumPath: 'img/sum/blueprince.jpg',
+        tier: 'F',
+        year: '2025',
+        hoursPlayed: 7.4,
+        tierScore: 50,
+        categories: ['Rätsel', 'Mystery', 'Erkundung', 'Ermittlung', 'Roguelite', '3D']
+    },
+    {
+        title: 'Carto',
+        review: 'Ich halte mich kurz: Carto ist süß, charmant und interessante Puzzle Mechaniken. Aber es ist leider echt boring.<br><br>Pacing ist schwach, das Puzzle Gimmick hat sich schnell abgenutzt und war dann nur noch busywork',
+        coverPath: 'img/cover/carto.jpg',
+        sumPath: 'img/sum/carto.jpg',
+        tier: 'D',
+        year: '2025',
+        hoursPlayed: 4.5,
+        tierScore: 50,
+        categories: ['Indie', 'Niedlich', 'Rätsel', 'Erkundung', 'Handgezeichnet', '2D']
+    },
+    {
+        title: 'Clair Obscur: Expedition 33',
+        review: 'Wow... Ich hab den Hype am Anfang verpasst. Das Game kam im Schatten von Oblivion raus. Als ich es dann probiert hab war relativ schnell klar, dass es das beste Spiel des Jahres für mich ist.<br><br>Das Gameplay, das Kampfsystem, die Levels, die Charaktere, die Musik, die Story, blablabla. Ich kann hier ewig lange alle Aspekte des Games aufzählen, aber es hat mich in jeder Perspektive in den Bann gezogen.<br><br>Alle Charaktere im Spiel, egal ob große oder kleine Rolle haben Herz und sind gut geschrieben. Die Story ist das beste, was ich bisher erlebt habe. Ich glaube nichtmal Cyberpunk oder Witcher 3 kommt daran. Das Game reiht sich bei mir genau auf diesem Level ein, ich glaube es ist in meinen Top 5 Games of all Time locker drin.<br><br>Ich freue mich schon, was Sandfall in ein paar Jahren als nächstes zaubert. For those who come after',
+        coverPath: 'img/cover/coe33.jpg',
+        sumPath: 'img/sum/coe33.jpg',
+        tier: 'S',
+        year: '2025',
+        hoursPlayed: 121.6,
+        achievements: '55/55',
+        tierScore: 90,
+        categories: ['Rundenbasierter Kampf', 'Komplexe Handlung', 'Fantasy', '3D']
+    },
+    {
+        title: 'Rift of the Necrodancer',
+        review: 'Story, Gameplay, Artstyle, Soundtrack? Alles Top! Warum nur in D?<br><br>Stellt sich raus, ich bin weder gut in Rhythmus Games, noch mag ich sie mechanisch besonders. Ich habs ne Chance gegeben, und das Spiel ist safe gut, aber nicht mein Ding.',
+        coverPath: 'img/cover/riftofthenecrodancer.jpg',
+        sumPath: 'img/sum/riftofthenecrodancer.jpg',
+        tier: 'D',
+        year: '2025',
+        hoursPlayed: 7.7,
+        achievements: '11/35',
+        tierScore: 50,
+        categories: ['Rhythmus', 'Musik', 'Indie', 'Schwer', 'Arcade', 'Action', '2D']
+    },
+    {
+        title: 'The Elder Scrolls IV: Oblivion Remastered',
+        review: 'Oh man, hab ich mich auf das Game gefreut! Und es hat alles versprochen, was ich mir gewünscht habe. Der Jank, die charmante Welt und das veraltete Leveling System.<br><br>Man mag es Nostalgie nennen, aber ich habe jeden Aspekt, den ich bei anderen Games kritisieren würde geliebt. Das geb ich gerne zu, das Game wär safe nen paar Stufen weiter unten gelandet sonst. Aber die Welt... Sie ist soooo schön. Ich liebe es da zu sein. Kindheitsgame',
+        coverPath: 'img/cover/oblivion.jpg',
+        sumPath: 'img/sum/oblivion.jpg',
+        tier: 'A',
+        year: '2025',
+        hoursPlayed: 117.3,
+        achievements: '28/60',
+        tierScore: 42,
+        categories: ['Rollenspiel', 'Open World', 'Fantasy', 'Einzelspieler', 'Gewalt']
+    },
+    {
+        title: 'The Shore',
+        review: 'Mein Lovecraft Jahr. Leider kein gutes Game. Der Start fand ich ganz gut, die Atmosphäre und Isolation auf der Insel war schon Eindrucksvoll aber das Spiel ist relativ schnell zu boring walking Sim geworden.<br><br>Lovecraftian Horror lebt für mich auch von Machtlosigkeit und Unwissenheit und der Protagonist hatte im weiteren Spielverlauf einfach beides nicht mehr. Das Ende war gut, alles andere sehr weird.',
+        coverPath: 'img/cover/theshore.jpg',
+        sumPath: 'img/sum/theshore.jpg',
+        tier: 'F',
+        year: '2025',
+        hoursPlayed: 2.3,
+        achievements: '7/13',
+        tierScore: 50,
+        categories: ['Lovecraft', 'Horror', 'Erkundung', 'Ego-Shooter', 'Kampfspiel']
+    },
+    {
+        title: 'Call of Cthulhu',
+        review: 'Hab es fürs Setting gekauft und das hat echt abgeliefert! Die Insel ist geil, die Rahmenstory fantastisch, aber das Gameplay und die spezifischen Storybeats waren leider eher schwach. Auch das Stealth/Gunplay hat mich eher gelangweilt.<br><br>Das Worldbuilding selbst war aber richtig gut. Wünschte aber auch, sie hätten sich für stylisierte Grafik entschieden, die schlechte realistische Grafik hat mehr uncanny valley verursacht.',
+        coverPath: 'img/cover/callofcthulhu.jpg',
+        sumPath: 'img/sum/callofcthulhu.jpg',
+        tier: 'D',
+        year: '2025',
+        hoursPlayed: 8.9,
+        achievements: '37/49',
+        tierScore: 50,
+        categories: ['Lovecraft', 'Horror', 'Psycho-Horror', 'Detektiv', 'Abenteuer']
+    },
+    {
+        title: 'Prince of Persia: The Lost Crown',
+        review: 'Das Spiel wäre gefloppt, wenn Movement und Kämpfe nicht so gut wären. Zum Glück sind beide Elemente aber gut. Die Metroidvania Komponenten auch, Weltdesign war echt stark, hatte sogar spaß daran, die Sammelgegenstände in der Welt zu entdecken.<br><br>Die Story war extrem Mid, die Boss Fights größtenteils klasse. Spaßiges Game, gerne mehr!',
+        coverPath: 'img/cover/poptlc.jpg',
+        sumPath: 'img/sum/poptlc.jpg',
+        tier: 'B',
+        year: '2025',
+        hoursPlayed: 32.5,
+        achievements: '40/40',
+        tierScore: 50,
+        categories: ['Metroidvania', 'Erkundung', '2D-Plattformer', 'Action', 'Stilisiert']
+    },
+    {
+        title: 'Kindergarten 3',
+        review: 'Kindergarten ist immer ein Banger. Humor und Gameplay immer noch sehr charmant. Auch hier war es ein gutes Wochenendspiel, mehr nicht.<br><br>Finde, sie haben das Konzept jetzt gut ausgeschöpft. Vor allem so die Rahmenstory ist jedes Game gleich, da hab ich schon gemerkt, dass etwas Fatigue eingesetzt hat.',
+        coverPath: 'img/cover/kindergarten3.png',
+        sumPath: 'img/sum/kindergarten3.png',
+        tier: 'C',
+        year: '2025',
+        hoursPlayed: 10.2,
+        achievements: '21/21',
+        tierScore: 50,
+        categories: ['Dark Humor', 'Schwarzer Humor', 'Choose Your Own Adventure']
+    },
+    {
+        title: 'Duck Detective: The Ghost of Glamping',
+        review: 'Der zweite Teil der Duck Detective Reihe. Solide, hat spaß gemacht! Die Charaktere waren super charmant und witzig geschrieben, das Rätsel war gut gestellt. Der Artstyle immer noch fantastisch.<br><br>Joa, viel zu loben und wenig auszusetzen aber ich glaub das ist es auch. Sehr average das Spiel. Hatte auf jeden Fall spaß, aber danach quasi nicht mehr dran gedacht.',
+        coverPath: 'img/cover/duckdetective2.png',
+        sumPath: 'img/sum/duckdetective2.png',
+        tier: 'C',
+        year: '2025',
+        hoursPlayed: 2.4,
+        achievements: '11/11',
+        tierScore: 50,
+        categories: ['Detektiv', 'Ermittlung', 'Gelegenheitsspiel', 'Kurz', 'Abenteuer']
+    },
+    {
+        title: 'Class of 09: The Flip Side',
+        review: 'Der dritte Teil der Reihe. Hab vorher viele negative Stimmen zu dem Game gehört, dachte mir aber, dass es so schlimm nicht sein kann. Solange der Humor stimmt, bin ich dabei.<br><br>Aber ja, Jecka in der Hauptrolle hat leider nicht ganz gepasst, der Humor des Games war mir viel zu... sexualisiert, was tendenziell okay ist, das hatten die ersten Games ja auch, aber hier war die Pointe recht simpel: "Haha, Sexuelle Anspielung".<br>Hab es leider abgebrochen, auch wenn ich den Vibe der Reihe weiterhin feiere',
+        coverPath: 'img/cover/classof09flipside.png',
+        sumPath: 'img/sum/classof09flipside.png',
+        tier: 'DNF',
+        year: '2025',
+        hoursPlayed: 0.5,
+        tierScore: 50,
+        categories: ['Humor', 'Visual Novel', 'Schwarzer Humor', 'Gelegenheitsspiel']
+    },
+    {
+        title: 'World of Horror',
+        review: 'LEIDER hat mich das Game nicht gepackt. Die Visuals und Lore sind extrem stark, offensichtlich von Junji Ito inspiriert, aber das hat im Endeffekt nicht gereicht. Das Gameplay war unintuitiv, die Storybeats unnachvollziehbar und inkohärent.<br><br>Es gab mir die Vibes als sollte der Mehrwert durch den Style kommen, aber mir schaudert es leider nicht, wenn ich nicht mitkomme. UI auch extrem cluttered. Ich glaub das war eine bewusste Entscheidung, but I did not like it sadly!',
+        coverPath: 'img/cover/worldofhorror.jpg',
+        sumPath: 'img/sum/worldofhorror.jpg',
+        tier: 'D',
+        year: '2025',
+        hoursPlayed: 3.7,
+        tierScore: 50,
+        categories: ['Horror', 'Lovecraft', 'Pixel-Art', 'Psycho-Horror', 'Point-&-Click']
+    },
+    {
+        title: 'Static Dread: The Lighthouse',
+        review: 'Man spielt einen Leuchtturmwärter auf einer abgelegenen Insel, der mit übernatürlichen Ereignissen konfrontiert wird. Die Atmosphäre ist dicht und unheimlich, unterstützt durch eine gelungene Soundkulisse und stimmungsvolle Grafiken im Retro-Stil.<br><br>Das Gameplay selbst is meing größtes Issue. Es ist etwas zäh. Die Schichtarbeit, wie so häufig im echten Leben, bockt leider nicht richtig. Sie dient als Mittel zum Zweck, klar, aber es zieht sich. Ich hab nie mehr als zwei Nächte (In Game) in Folge gespielt.',
+        coverPath: 'img/cover/staticdread.jpg',
+        sumPath: 'img/sum/staticdread.jpg',
+        tier: 'C',
+        year: '2025',
+        hoursPlayed: 7.7,
+        tierScore: 50,
+        categories: ['Horror', 'Atmosphäre', 'Puzzle', 'Survival']
+    },
+    {
+        title: 'Verho: Curse of Faces',
+        review: 'Ich hab es am Release Day random in meiner Frontseite entdeckt und dachte mir "Why not? Sieht schnieke aus!" Hatte wenig Erwartungen, außer dass es ein bisschen diesen Dark Souls Itch scratched. Und das tat es.<br><br>Die Welt zu erkunden war mein Highlight. Die Asthetik ist so gut umgesetzt, die PS2-Grafik extrem gut eingebettet. Die Kämpfe schaffen es auch trotz bewusst gewählten Stil sehr responsive und gut designed zu sein. Die Story hat micha auch immens abgeholt, obwohl es recht simpel war a la "Verfluchtes Land - Breche den Fluch", die Lore der Welt war extrem Deep.',
+        coverPath: 'img/cover/verho.jpg',
+        sumPath: 'img/sum/verho.jpg',
+        tier: 'A',
+        year: '2025',
+        hoursPlayed: 19.6,
+        achievements: '89/99',
+        tierScore: 30,
+        categories: ['Dungeon Crawler', 'Erkundung', 'Egoperspektive', 'Soulslike']
+    },
+    {
+        title: 'SANABI',
+        review: 'Habe lange zwischen S & A geschwankt, aber die Story hat mich komplett mitgenommen. Selten, dass man bei High-Intensity Platformer Games weinen muss.<br><br>Das Gameplay macht krass süchtig, das Platforming ist extrem gut umgesetzt und ich könnte den ganzen Tag weitere Levlels spielen. Die Story, die ich anfangs ehrlicherweise als Unterbrechung des Gameplays wahrgenommen habe, hat mich doch recht schnell abgeholt. Die Dynamik zwischen dem Hauptcharakter und Mari ist fantastisch, unterhaltsam und lieb. Mari selbst ist fantastisch geschrieben. Ihre Energie war erfrischend und die Backstory während des Spiels zu entdecken hat ihr nochmal so viel verdiente Tiefe gegeben.<br><br>Das Ende des Spiels hab ich ein bisschen kommen sehen, aber nicht im Sinne "Vorhersehbar", sondern eher Kategorie "Gutes Foreshadowing, fantastische Resolution". Wärs nicht Cyberpunk, hätte ich es wohl aber in A gepackt lul',
+        coverPath: 'img/cover/sanabi.jpg',
+        sumPath: 'img/sum/sanabi.jpg',
+        tier: 'S',
+        year: '2025',
+        hoursPlayed: 14.2,
+        achievements: '14/21',
+        tierScore: 20,
+        categories: ["Pixel-Art", "Komplexe Handlung", "Action", "Cyberpunk", "2D"]
+    },/*
+    {
+        title: 'The Drifter',
+        review: 'Empfehlung eines Arbeitskollegen, noch nicht zu gekommen',
+        coverPath: 'img/cover/thedrifter.png',
+        sumPath: 'img/sum/thedrifter.png',
+        tier: 'D',
+        year: '2026',
+        hoursPlayed: 9.0,
+        tierScore: 50,
+        categories: ["Point-&-Click", "Rätsel", "Komplexe Handlung", "Ermittlung"]
+    },
+    {
+        title: 'Mouthwashing',
+        review: 'Walking Sim Psychological Horror Game.<br><br>Mit dem Stil fick ich hart mit, die unlineare Geschichte, die erzählt wird macht das ganze extrem gut angespannt. Man weiß ständig, es liegt was in der Luft, aber oft kann man es nicht ganz bennenen. Kurz und knackig, hab es sehr genossen.',
+        coverPath: 'img/cover/mouthwashing.jpg',
+        sumPath: 'img/sum/mouthwashing.jpg',
+        tier: 'C',
+        year: '2026',
+        hoursPlayed: 3.8,
+        achievements: '17/18',
+        tierScore: 50,
+        categories: ["Psycho-Horror", "Horror", "Komplexe Handlung", "Atmosphärisch"]
+    },
+    {
+        title: 'Lies of P',
+        review: 'Lies of P ist wahrscheinlich DAS Soulslike. Und zwar in dem Sinne, dass es sich Inspiration von Dark Souls, Sekiro, Elden Ring UND Bloodborne nimmt. Parieren à la Sekiro, Weltdesign à la Dark Souls, Bossdesign à la Elden Ring & Kampfsystem à la Bloodborne.<br><br>Und das macht es tatsächlich alles sehr gut. Auch die eigenen Mechanics, bspw. dass man nach leeren all seiner Pulse Cells (Estus Flasks) mit genug Schaden an Gegnern wieder einen zurückgewinnt. Die Story und Themes sind ganz nett, visuell klasse und das Boss Design ist meistens super. Meistens? Gekonnten Augen ist aufgefallen, dass ich die Bosse mit Elden Ring verglichen habe und ich *ähem* HASSE Elden Ring. Manche Lies of P Bosse fallen leider ins gleiche Muster von "Hauptsache kinoreife Fights, während die Mechanics unausgereift sind, Kombos zu lange oder zu schlecht kommuniziert bla bla bla". Trotzdem sind die Bosse im Mittel allemal besser als in Elden Ring.',
+        coverPath: 'img/cover/liesofp.jpg',
+        sumPath: 'img/sum/liesofp.jpg',
+        tier: 'S',
+        year: '2026',
+        hoursPlayed: 39.7,
+        achievements: '42/42',
+        tierScore: 30,
+        categories: ["Soulslike", "Dark Fantasy", "Action", "Einzelspieler", "Steampunk"]
+    },
+    {
+        title: 'Katana ZERO',
+        review: '',
+        coverPath: 'img/cover/katanazero.jpg',
+        sumPath: 'img/sum/katanazero.jpg',
+        tier: 'C',
+        year: '2026',
+        hoursPlayed: 6.5,
+        tierScore: 50,
+        categories: ["Pixel-Art", "Action", "Komplexe Handlung", "Guter Soundtrack"]
+    },
+    {
+        title: 'Ghostrunner',
+        review: 'Fast Paced Cyberpunk Action Platformer. Während ich diese Worte aneinanderreihe, merke ich "Damn, das klingt leider extrem geil!. Spoiler: Ist es leider nicht ganz. Die Geschwindigkeit und Movement ist zwar mit Abstand das beste am Game, aber die Story ist unglaublich vorhersehbar und am schlimmsten: Das Movement & Combat selbst ist unglaublich unpräzise. Ich war so häufig immens frustiert ein Segment nicht zu schaffen. Das ist eigentlich immer geil dieses Gefühl, hier hat es sich aber zu oft angefühlt, als würde das Game mich abhalten wollen, spaß zu haben. Die Atmo carried hier',
+        coverPath: 'img/cover/ghostrunner.jpg',
+        sumPath: 'img/sum/ghostrunner.jpg',
+        tier: 'C',
+        year: '2026',
+        hoursPlayed: 10.9,
+        achievements: '22/45',
+        tierScore: 50,
+        categories: ["Action", "Cyberpunk", "Schnell", "Egoperspektive", "Schwer"]
+    },
+    {
+        title: 'SCREAMER',
+        review: '',
+        coverPath: 'img/cover/screamer.jpg',
+        sumPath: 'img/sum/screamer.jpg',
+        tier: 'C',
+        year: '2026',
+        tierScore: 50,
+        categories: ["Rennspiel", "Anime", "Arcade", "Fahren", "Kampfrennspiel"]
+    },
+    {
+        title: 'Cairn',
+        review: 'Ein Kletterspiel, das versucht eine packende Geschichte über Verlust und Vermeidung zu erzählen. Als jemand, der gerne selbst bouldert hab ich sehr auf das Game hingefiebert. Leider hab ich doch einiges am Game zu kritisieren. Das Movement, der Kernaspekt des Spiels, fühlt sich wonky an, die Gliedmaßen von Aava können sich DEUTLICH mehr bewegen als meine das in der Kletterhalle können. Das Gameplay Gimmick wird schnell repetitiv, Eisklettern fühlt sich nicht gut an und auch die Geschichte landet leider bei mir kaum, da Aava leider einfach sehr unsympathisch daher kommt. Marco, Chris sind ebenfalls eher nervige Charaktere, allein Naomi punktet bei mir. <br><br>Das positive an dem Game ist aufjedenfall der Survival Aspekt, also Rucksackmanagement, Kochen, tapen etc. & das Erkunden der Map. Es dauert Felsen zu klettern, aber das hat mich nie abgehalten zu sagen "Hey, das da hinten sieht cool aus, das guck ich mir an".',
+        coverPath: 'img/cover/cairn.jpg',
+        sumPath: 'img/sum/cairn.jpg',
+        tier: 'B',
+        year: '2026',
+        hoursPlayed: 17.6,
+        achievements: '52/52',
+        tierScore: 50,
+        categories: ["Stilisiert", "Erkundung", "Indie", "Schwer", "Abenteuer", "Sport"]
+    },
     /*
+    {
+        title: 'Nivalis Nights',
+        review: '',
+        coverPath: 'img/cover/nivalis.jpg',
+        sumPath: 'img/sum/nivalis.jpg',
+        tier: 'DNF',
+        year: '2026',
+        tierScore: 50,
+        categories: ["Cyberpunk", "Simulation", "Lebenssimulation", "Management"]
+    },
+    {
+        title: 'Lunacid',
+        review: '',
+        coverPath: 'img/cover/lunacid.jpg',
+        sumPath: 'img/sum/lunacid.jpg',
+        tier: 'DNF',
+        year: '2026',
+        hoursPlayed: 15.5,
+        tierScore: 50,
+        categories: ["Dungeon Crawler", "Dark Fantasy", "Egoperspektive", "Retro"]
+    },
+    {
+        title: 'MIO: Memories in Orbit',
+        review: 'Ein Platform fokussiertes Metroidvania mit unglaublich schöner Cell-shaded Grafik und außerweltlicher Musik. Passt, denn das Spiel findet im Weltraum statt.<br><br>MIO ist ein Meisterwerk im Environmental Storytelling und erzählt die Geschichte wie MIO, das Herz des Raumschiffes retten muss, damit das Raumschiff und dessen Roboter nicht weiter zerstört werden. Die Menschen auf dem Schiff sind schon lange tot.<br><br>Das Spiel hat fantastisches Platforming, tolles Level Design und reizvolle Bosse (Außer Sol & Vin, wer auch immer diesen Boss designed hat gehört gefeuert). Es war wirklich knapp, dieses Game in S zu packen, aber ich hab doch genug Kritik an dem Game, damit es knapp diese Stufe verfehlt. Metroidvanias leben von Belohnungen fürs Erkunden. MIO nimmt dir gelegentlich Ressourcen einfach so ohne Vorwarnung weg. Das Kampfsystem ist ziemlich simpel und die Modifier nicht komplex und spannend genug, als das ich damit tatsächlich experimentieren wollte. Das Game ist allemal eine Empfehlung wert!',
+        coverPath: 'img/cover/miomemoriesinorbit.jpg',
+        sumPath: 'img/sum/miomemoriesinorbit.jpg',
+        tier: 'A',
+        year: '2026',
+        hoursPlayed: 33.3,
+        achievements: '40/40',
+        tierScore: 75,
+        categories: ["Metroidvania", "Erkundung", "Plattformer", "Atmosphärisch", "2D"]
+    },
+    {
+        title: 'Pacific Drive',
+        review: '',
+        coverPath: 'img/cover/pacificdrive.jpg',
+        sumPath: 'img/sum/pacificdrive.jpg',
+        tier: 'DNF',
+        year: '2026',
+        hoursPlayed: 32.0,
+        tierScore: 50,
+        categories: ["Fahren", "Survival", "Erkundung", "Komplexe Handlung", "Sci-Fi"]
+    },
+    /*
+    {
+        title: 'Absolum',
+        review: '',
+        coverPath: 'img/cover/absolum.jpg',
+        sumPath: 'img/sum/absolum.jpg',
+        tier: 'DNF',
+        year: '2026',
+        tierScore: 50,
+        categories: ["Beat'em Up", "Roguelike", "Lokaler Koop", "Fantasy", "Koop"]
+    },
+    {
+        title: 'Scarlet Hollow',
+        review: 'Oh Junge. Scarlet Hollow ist ein Visual Novel mit Lovecraftian / Appalachian Folk Horror Setting. Nach dem Tod der entfremdeten Tante kehrt man zurück in die eigene Geburtsstadt von Scarlet Hollow, eine Stadt, die nur am Leben gehalten wird von der Mine, die im Besitz von Tabitha, unserer Cousine liegt. Die Beerdigung ist in 7 Tagen und bis dahin erwartet uns eine verstörende Realität in dieser North Carolina Bergstadt.<br><br>Wow, ich hab das Spiel gestartet, da es wohl ein kosmischer Horror Geheimtipp sein soll. Zu dem Zeitpunkt des Kaufs waren 4 von 7 Kapiteln draußen, die 5te folgte aber im Februar. Die Story ist fantastisch und die Charaktere sind so glaubhaft geschrieben, wie ich es selten gesehen habe. Tabitha besonders fängt extrem kalt und abweisend an, und je mehr Zeit man mit ihr verbringt... nun ja, sie bleibt wohl kalt und abweisend. Der Artstyle, die Lore, und dass man nie das komplette Bild hat und nicht alle retten kann, macht das Game so besonders. Ich hab es geliebt, nach Dialogen mich zurückzulehnen und zu wundern, was das für die Welt / Story bedeutet. Mein Lieblingshorrorspiel aller Zeiten!',
+        coverPath: 'img/cover/scarlethollow.jpg',
+        sumPath: 'img/sum/scarlethollow.jpg',
+        tier: 'S',
+        year: '2026',
+        hoursPlayed: 17.5,
+        achievements: '152/152',
+        tierScore: 40,
+        categories: ["Early Access", "Bedeutsame Entscheidungen", "Visual Novel"]
+    },/*
+    {
+        title: 'Kingdom Come: Deliverance 2',
+        review: '',
+        coverPath: 'img/cover/kingdomcomedeliverance2.jpg',
+        sumPath: 'img/sum/kingdomcomedeliverance2.jpg',
+        tier: 'DNF',
+        year: '2026',
+        hoursPlayed: 97.5,
+        tierScore: 50,
+        categories: ["Rollenspiel", "Mittelalter", "Open World", "Einzelspieler", "Action"]
+    },
+    {
+        title: 'SOMA',
+        review: '',
+        coverPath: 'img/cover/soma.jpg',
+        sumPath: 'img/sum/soma.jpg',
+        tier: 'B',
+        year: '2026',
+        hoursPlayed: 8.9,
+        achievements: '10/10',
+        tierScore: 50,
+        categories: ["Horror", "Psycho-Horror", "Atmosphärisch", "Komplexe Handlung"]
+    },
+    {
+        title: 'The Sinking City Remastered',
+        review: '',
+        coverPath: 'img/cover/thesinkingcity.jpg',
+        sumPath: 'img/sum/thesinkingcity.jpg',
+        tier: 'DNF',
+        year: '2026',
+        hoursPlayed: 25.5,
+        tierScore: 50,
+        categories: ["Lovecraft", "Third-Person-Shooter", "Detektiv", "Horror", "Action"]
+    },
+    {
+        title: 'Unsighted',
+        review: '',
+        coverPath: 'img/cover/unsighted.jpg',
+        sumPath: 'img/sum/unsighted.jpg',
+        tier: 'DNF',
+        year: '2026',
+        hoursPlayed: 11.5,
+        tierScore: 50,
+        categories: ["Action", "Abenteuer", "Metroidvania", "Weibliche Hauptfigur", "2D"]
+    },
+    {
+        title: 'Mark of The Ninja Remastered',
+        review: '',
+        coverPath: 'img/cover/markoftheninja.jpg',
+        sumPath: 'img/sum/markoftheninja.jpg',
+        tier: 'DNF',
+        year: '2026',
+        hoursPlayed: 10.5,
+        tierScore: 50,
+        categories: ["Schleichspiel", "Ninja", "2D", "Action", "Indie", "Plattformer"]
+    },
+    {
+        title: 'Slay The Princess',
+        review: '',
+        coverPath: 'img/cover/slaytheprincess.jpg',
+        sumPath: 'img/sum/slaytheprincess.jpg',
+        tier: 'C',
+        year: '2026',
+        hoursPlayed: 2.9,
+        achievements: '23/131',
+        tierScore: 80,
+        categories: ["Visual Novel", "Bedeutsame Entscheidungen", "Psycho-Horror"]
+    },
+    {
+        title: 'Cocoon',
+        review: 'Ein Puzzle Game mit wirklich abgespacten Komponenten. Man springt zwischen unterschiedlichen... Realitäten? hin und her und nutzt die unterschiedlichen Regeln der Realitäten um Rätsel zu lösen. Die Puzzle sind oft sehr straight-forward. Insgesamt war es ziemlich leicht und auch die Boss Fights, dessen Inklusion in ein Puzzle Game honestly eine ganz gute Idee waren, haben es leider nicht besonders positiv darstehen lassen. Ich mochte es, aber ich werde es auch in einem Monat vergessen haben.',
+        coverPath: 'img/cover/cocoon.jpg',
+        sumPath: 'img/sum/cocoon.jpg',
+        tier: 'D',
+        year: '2026',
+        hoursPlayed: 4.4,
+        achievements: '17/17',
+        tierScore: 50,
+        categories: ["Abenteuer", "Rätsel", "Erkundung", "Indie", "Rätsel-Plattformer"]
+    },
+    {
+        title: 'Pentiment',
+        review: '',
+        coverPath: 'img/cover/pentiment.webp',
+        sumPath: 'img/sum/pentiment.jpg',
+        tier: 'B',
+        year: '2026',
+        hoursPlayed: 21.4,
+        achievements: '20/41',
+        tierScore: 50,
+        categories: ["Historisch", "Komplexe Handlung", "Ermittlung", "Abenteuer"]
+    },
+    {
+        title: 'Return to the Obra Dinn',
+        review: 'Achja, Obra Dinn. Ein Detektivspiel, wo man eine Versicherungsperson spielt, die auf einem Geisterschiff ankommt und mit einer magischen Uhr herausfinden muss, wie die 60-köpfige Besatzung verstorben ist. Die Uhr ermöglicht es, zum Zeitpunkt des Todes einer Person zu springen, das Standbild und die Dialoge Indizien dafür wie, warum und durch wen die jeweilige Person umgekommen ist.<br><br>Ich hab das Spiel bereits zweimal angefangen in Vergangenheit. Jetzt habe ich es endlich durchgezogen und es war grandios. Die Geschichte in seiner Komplexität, non-chronologischen Erzählung und den vielen einzigartigen Charaktere, dessen Persönlichkeiten selbst in einem so begrenzten Format sichtbar werden ist fantastisch. Ich bin selbst etwas frustriert, dass ich manche Schicksale nicht erschlossen, sondern geraten habe, da das Spiel für ALLES eine Lösung hat, manchmal sogar mehrere. Die Mechanic, dass die eigenen Vermutung erst bestätigt werden, nachdem man drei Personen richtig identifiziert hat hilft, auch mal falsch zu liegen. Das ist schließlich meine größte Kritik an dem Genre mit so viel Potenzial. Es sind keine Detektivspiele, wenn man gesagt bekommt, dass man falsch liegt.',
+        coverPath: 'img/cover/obradinn.jpg',
+        sumPath: 'img/sum/obradinn.jpg',
+        tier: 'B',
+        year: '2026',
+        hoursPlayed: 8.1,
+        achievements: '16/16',
+        tierScore: 85,
+        categories: ["Detektiv", "Mystery", "Rätsel", "Komplexe Handlung", "Indie"]
+    },
+    {
+        title: 'Call of the Sea',
+        review: 'Ein Walking Sim & Puzzle Game mit Lovecraftian Lore. Das Spiel findet auf einer abgelegenen Insel vor Tahiti statt, die schnell zeigt, dass sie eine mysteriöse Vergangenheit und übernatürliche Geheimnisse birgt.<br><br>Ich hatte nicht viel Erwartung an das Game und habe es mir geholt, da ich von den Lovecraftian Inhalten gehört hab. Tatsächlich lernt man das Spiel mehr zu schätzen, wenn man H.P. Lovecraft "Shadow over Innsmouth" gelesen hat, da das Spiel direkt auf dem Kanon des Buches aufbaut. Nicht notwendig zum Spielen, kontextualisiert die Geschehnisse aber nochmal spannender<br><br>Das Game selbst, die Story, die Puzzle und die Lore fand ich alle ziemlich stark. Das Voice Acting von Cissy Jones ist mir besonders hervorgestochen. Ein gutes Spiel!',
+        coverPath: 'img/cover/callofthesea.webp',
+        sumPath: 'img/sum/callofthesea.webp',
+        tier: 'C',
+        year: '2026',
+        hoursPlayed: 6.6,
+        achievements: '34/34',
+        tierScore: 50,
+        categories: ["Abenteuer", "Rätsel", "Komplexe Handlung", "Egoperspektive"]
+    },
+    {
+        title: 'What Remains of Edith Finch',
+        review: 'Ein storydriven Walking Sim, in der man das alte Haus der Finches erkundet und die Geschichten, beziehungsweise die Tode der Familienmitglieder erlebt.<br><br>Es ist offensichtlich charmant geschrieben und tragisch inszeniert. Man könnte wirklich glauben, die Familie Finch wäre verflucht (wenn nicht fast jeder Tod durch Fahrlässigkeit verursacht wurde). Das Spiel sollte emotional abholen, hat sie bei mir aber nicht geschafft. Lediglich das Ende und die scheinbar unausweichliche Realität des Todes hat mich abgeholt. Insgesamt eher mid. Ich fand Firewatch, ein ziemlich ähnliches Game, deutlich packender.',
+        coverPath: 'img/cover/whatremainsofedithfinch.jpg',
+        sumPath: 'img/sum/whatremainsofedithfinch.jpg',
+        tier: 'D',
+        year: '2026',
+        hoursPlayed: 2.3,
+        achievements: '9/9',
+        tierScore: 50,
+        categories: ["Komplexe Handlung", "Atmosphärisch", "Laufsimulation"]
+    },
+    {
+        title: 'Need for Speed: Hot Pursuit',
+        review: 'Arcade Racer. Punkt. Das wars, mehr gibts nicht zu sagen... <br><br>Hab es mir geholt, da ich auf SCREAMER hingefiebert habe und NFS war echt ein solider Zeitvertreib. Mechanisch, Gameplaytechnisch nichts weltbewegendes, aber das hab ich auch nicht erwartet. Spaßig!',
+        coverPath: 'img/cover/needforspeedhotpursuit.webp',
+        sumPath: 'img/sum/needforspeedhotpursuit.jpg',
+        tier: 'C',
+        year: '2026',
+        hoursPlayed: 18.0,
+        achievements: '0/0',
+        tierScore: 50,
+        categories: ["Rennspiel", "Kampfrennspiel", "Sport", "Fahren", "PvP", "Arcade"]
+    },
+    {
+        title: 'Grunn',
+        review: 'Oh Junge, oh Junge. Grunn ist ein Cozy-Horror Game mit Time Loop Mechanic à la Outer Wilds. Man wird beauftragt, sich am Wochenende um einen Garten zu kümmern, Gras zu schneiden, Pflanzen zu gießen und Müll zu entfernen. Schnell findet man jedoch heraus, dass ungeahnte Kräfte in der Stadt aktiv sind. Nachdem man eins der Enden erreicht (max 45 Minunten) kann man nochmal starten. Es bleibt nur das Wissen über die Stadt bestehen. Man weiß wo man hinmuss, wo welche Geheimnisse auf einen warten und alleine die Vertrautheit in der Stadt zu gewinnen fühlt sich wie ein massiver Erfolg an. Das Spiel macht meistens einen guten Job, einen zu leiten. Ich musste nur einmal googlen, da ich massiv auf dem Schlauch stand. Das Rätsel, was in dieser Stadt passiert, zu lösen ist kreativ, die Auflösung angemessen komplex für ein so kleines Spiel. Die Grafik trägt positiv zur allgemeinen Diskrepanz bei: "Ist das Horror oder Cozy Game?"',
+        coverPath: 'img/cover/grunn.png',
+        sumPath: 'img/sum/grunn.jpg',
+        tier: 'B',
+        year: '2026',
+        hoursPlayed: 6.4,
+        achievements: '33/33',
+        tierScore: 50,
+        categories: ["Horror", "Verschiedene Enden", "Bedeutsame Entscheidungen"]
+    },
+    {
+        title: 'Neon White',
+        review: '',
+        coverPath: 'img/cover/neonwhite.jpg',
+        sumPath: 'img/sum/neonwhite.webp',
+        tier: 'A',
+        year: '2026',
+        hoursPlayed: 23.3,
+        achievements: '59/63',
+        tierScore: 25,
+        categories: ["Ego-Shooter", "3D-Plattformer", "Schnell", "Parkour", "Action"]
+    },
+    {
+        title: 'Heaven Does Not Respond',
+        review: '',
+        coverPath: 'img/cover/heavendoesnotrespond.webp',
+        sumPath: 'img/sum/heavendoesnotrespond.jpg',
+        tier: 'D',
+        year: '2026',
+        hoursPlayed: 2.3,
+        achievements: '11/11',
+        tierScore: 50,
+        categories: ["Horror", "Ermittlung", "Psycho-Horror", "Retro", "Point-&-Click"]
+    },
+    {
+        title: 'Psychonauts',
+        review: '',
+        coverPath: 'img/cover/psychonauts.jpg',
+        sumPath: 'img/sum/psychonauts.webp',
+        tier: 'B',
+        year: '2026',
+        hoursPlayed: 21.3,
+        achievements: '37/37',
+        tierScore: 50,
+        categories: ["Plattformer", "Humor", "Abenteuer", "Einzelspieler", "Action"]
+    },
+    {
+        title: 'Silent Hill f',
+        review: '',
+        coverPath: 'img/cover/silenthillf.png',
+        sumPath: 'img/sum/silenthillf.webp',
+        tier: 'B',
+        year: '2026',
+        hoursPlayed: 36.2,
+        achievements: '56/56',
+        tierScore: 50,
+        categories: ["Psycho-Horror", "Horror", "Weibliche Hauptfigur", "Survival-Horror"]
+    },
+    {
+        title: 'Outer Wilds',
+        review: '',
+        coverPath: 'img/cover/outerwilds.jpg',
+        sumPath: 'img/sum/outerwilds.jpg',
+        tier: 'A',
+        year: '2026',
+        hoursPlayed: 25,
+        achievements: '',
+        tierScore: 30,
+        categories: ["Erkundung", "Weltraum", "Mystery", "Komplexe Handlung", "3D"]
+    },
+    {
+        title: 'Thimbleweed Park',
+        review: '',
+        coverPath: 'img/cover/thimbleweedpark.png',
+        sumPath: 'img/sum/thimbleweedpark.png',
+        tier: 'DNF',
+        year: '2026',
+        hoursPlayed: 15.0,
+        achievements: '',
+        tierScore: 50,
+        categories: ["Abenteuer", "Point-&-Click", "Pixel-Art", "Indie", "Rätsel", "Retro"]
+    },
+    {
+        title: 'No One Lives Under The Lighthouse',
+        review: 'Ok, ich will hier jetzt nicht spoilern, aber ich hab das Gefühl, es lebt jemand unter dem Leuchtturm... Naja, es ist ein PSX Story Horror Game. <br<br> Lebt krass von der Atmosphäre, die ist erwartungsgemäß ziemlich geil. Gameplay technisch',
+        coverPath: 'img/cover/noonelivesunderthelighthouse.png',
+        sumPath: 'img/sum/noonelivesunderthelighthouse.jpg',
+        tier: 'D',
+        year: '2026',
+        hoursPlayed: 5.0,
+        tierScore: 50,
+        categories: ["Indie", "Horror", "Abenteuer", "Atmosphärisch", "Lovecraft"]
+    },
+    {
+        title: 'Gunpoint',
+        review: '',
+        coverPath: 'img/cover/gunpoint.png',
+        sumPath: 'img/sum/gunpoint.jpg',
+        tier: 'C',
+        year: '2026',
+        hoursPlayed: 5.0,
+        achievements: '',
+        tierScore: 50,
+        categories: ["Schleichspiel", "Indie", "Rätsel", "2D", "Pixel-Art", "Einzelspieler"]
+    },/*
+    {
+        title: 'Observer: System Redux',
+        review: '',
+        coverPath: 'img/cover/observersystemredux.jpeg',
+        sumPath: 'img/sum/observersystemredux.jpg',
+        tier: 'DNF',
+        year: '2026',
+        hoursPlayed: 9.0,
+        achievements: '',
+        tierScore: 50,
+        categories: ["Horror", "Ermittlung", "Cyberpunk", "Hacking", "Schleichspiel"]
+    }
+    {
+        title: 'The Excavation of Hob\'s Barrow',
+        review: '',
+        coverPath: 'img/cover/theexcavationofhobsbarrow.webp',
+        sumPath: 'img/sum/theexcavationofhobsbarrow.png',
+        tier: 'B',
+        year: '2026',
+        hoursPlayed: 7.0,
+        achievements: '',
+        tierScore: 50,
+        categories: ["Point-&-Click", "Abenteuer", "Horror", "Pixel-Art", "Rätsel"]
+    },
+    {
+        title: 'The Case of the Golden Idol',
+        review: '',
+        coverPath: 'img/cover/thecaseofthegoldenidol.jpg',
+        sumPath: 'img/sum/thecaseofthegoldenidol.jpg',
+        tier: 'A',
+        year: '2026',
+        hoursPlayed: 7.0,
+        achievements: '',
+        tierScore: 55,
+        categories: ["Mystery", "Detektiv", "Ermittlung", "Rätsel", "Verschwörung"]
+    },
+    {
+        title: 'UNBEATABLE',
+        review: 'Story Driven Rythm Game<br><br>Normalerweise nicht mein Genre, aber ich liebe eine gute Story. Und die Story und wie sie erzählt wird in UNBEATABLE ist fantastisch. Reiht sich in eins der wenigen Games ein dieses Jahr, die mich zum weinen gebracht hat. Der Anime x 3D Object Artstyle ist so unglaublich schön, die Musik ist angemessen Punk Rock und das Gameplay unterstreicht das perfekt. Einzige Issue, dass ich mit dem Game hab ist das Pacing. Es ist unglaublich witzig, wahrscheinlich das witzigste Game des Jahres für mich, aber die Minigames und Erkundung zieht sich teilweise schon. Sonst 10/10, der Arcade Modus ist das erste Mal, dass ich Bock hab Rythm Games zu grinden.',
+        coverPath: 'img/cover/unbeatable.png',
+        sumPath: 'img/sum/unbeatable.jpg',
+        tier: 'S',
+        year: '2026',
+        hoursPlayed: 28,
+        achievements: '39/44',
+        tierScore: 25,
+        categories: ["Rhythmus", "Weibliche Hauptfigur", "Musik", "Komplexe Handlung"]
+    },
+    {
+        title: 'Tides of Tomorrow',
+        review: '',
+        coverPath: 'img/cover/tidesoftomorrow.jpg',
+        sumPath: 'img/sum/tidesoftomorrow.jpg',
+        tier: 'B',
+        year: '2026',
+        hoursPlayed: 15.7,
+        achievements: '35/39',
+        tierScore: 10,
+        categories: ["Bedeutsame Entscheidungen", "Komplexe Handlung", "Abenteuer"]
+    },
+    {
+        title: 'ENA: Dream BBQ',
+        review: 'ENA ist ein... warte mal was zum Fick ist ENA eigentlich? Ein surreales, episodisches Story Game, dass quasi Walking Sim ist.<br><br>Das Spiel hat einen verdammt guten, kreativen Artstyle, jeder Charakter hat so viel Charme und Persönlichkeit. Die Story bisher ist nicht nenneswert und teil des absurden Stils. Man sucht den Boss... und die Toilette? Eins davon erreicht man in Folge 1. Ich fand es schon witzig, aber mehr ist auch nicht geblieben. Weiß es mehr für das was es ist zu schätzen, als ich meine Zeit damit geschätzt habe. Aber hey, no regrets',
+        coverPath: 'img/cover/enadreambbq.png',
+        sumPath: 'img/sum/enadreambbq.png',
+        tier: 'D',
+        year: '2026',
+        hoursPlayed: 3,
+        achievements: '12/12',
+        tierScore: 50,
+        categories: ["Surreal", "Abeneuer", "Einzelspieler", "Erkundung", "Stilisiert"]
+    },
+    {
+        title: 'Brume',
+        review: '',
+        coverPath: 'img/cover/brume.png',
+        sumPath: 'img/sum/brume.png',
+        tier: 'D',
+        year: '2026',
+        hoursPlayed: '',
+        achievements: '',
+        tierScore: 50,
+        categories: ["Indie", "Abenteuer", "Soulslike", "Düster", "Erkundung", "Elfen"]
+    },
+    {
+        title: 'Hyper Light Drifter',
+        review: '',
+        coverPath: 'img/cover/hyperlightdrifter.png',
+        sumPath: 'img/sum/hyperlightdrifter.jpg',
+        tier: 'DNF',
+        year: '2026',
+        hoursPlayed: '',
+        achievements: '',
+        tierScore: 50,
+        categories: ["Pixel-Art", "Guter Soundtrack", "Atmosphärisch", "Indie", "Action"]
+    },
+    {
+        title: 'Replaced',
+        review: '',
+        coverPath: 'img/cover/replaced.jpg',
+        sumPath: 'img/sum/replaced.jpg',
+        tier: 'C',
+        year: '2026',
+        hoursPlayed: '',
+        achievements: '',
+        tierScore: 50,
+        categories: ["Pixel-Art", "Kinoreif", "Cyberpunk", "Erzählend", "Sidescroller"]
+    },
+    {
+        title: 'Mina the Hollower',
+        review: '',
+        coverPath: 'img/cover/minathehollower.png',
+        sumPath: 'img/sum/minathehollower.jpg',
+        tier: 'A',
+        year: '2026',
+        hoursPlayed: '',
+        achievements: '',
+        tierScore: 80,
+        categories: ["Action-Abenteuer", "Pixel-Art", "Vogelperspektive", "Plattformer"]
+    },
+    {
+        title: 'Outer Wilds: Echoes of the Eye',
+        review: '',
+        coverPath: 'img/cover/outerwildsechoesoftheeye.png',
+        sumPath: 'img/sum/outerwildsechoesoftheeye.jpg',
+        tier: 'F',
+        year: '2026',
+        hoursPlayed: '',
+        achievements: '',
+        tierScore: 50,
+        categories: ["Abenteuer", "Action", "Horror", "Mystery", "Rätsel"]
+    },
+    {
+        title: 'Turbo Overkill',
+        review: '',
+        coverPath: 'img/cover/turbooverkill.jpg',
+        sumPath: 'img/sum/turbooverkill.jpg',
+        tier: 'DNF',
+        year: '2026',
+        hoursPlayed: '',
+        achievements: '',
+        tierScore: 50,
+        categories: ["Ego-Shooter", "Boomer-Shooter", "Action", "Shooter", "Retro"]
+    },
+    {
+        title: 'Spyro Reignited Trilogy',
+        review: '',
+        coverPath: 'img/cover/spyroreignitedtrilogy.png',
+        sumPath: 'img/sum/spyroreignitedtrilogy.jpg',
+        tier: 'F',
+        year: '2026',
+        hoursPlayed: '',
+        achievements: '',
+        tierScore: 50,
+        categories: ["3D-Plattformer", "Abenteuer", "Drachen", "Remake", "Action"]
+    },
+    {
+        title: 'Strange Horticulture',
+        review: '',
+        coverPath: 'img/cover/strangehorticulture.jpg',
+        sumPath: 'img/sum/strangehorticulture.jpg',
+        tier: 'C',
+        year: '2026',
+        hoursPlayed: '5.6',
+        achievements: '14/18',
+        tierScore: 50,
+        categories: ["Mystery", "Rätsel", "Gemütlich", "Düster", "Detektiv", "2D"]
+    },
+    {
+        title: "Kusan: City of Wolves",
+        review: '',
+        coverPath: 'img/cover/kusancityofwolves.png',
+        sumPath: 'img/sum/kusancityofwolves.jpg',
+        tier: 'C',
+        year: '2026',
+        hoursPlayed: '',
+        achievements: '',
+        tierScore: 50,
+        categories: ["Schnell", "Schwer", "Blut und Verstümmelung", "Comicbuch"]
+    },
+    {
+        title: "Exit 8",
+        review: '',
+        coverPath: 'img/cover/exit8.jpg',
+        sumPath: 'img/sum/exit8.jpg',
+        tier: 'D',
+        year: '2026',
+        hoursPlayed: '',
+        achievements: '',
+        tierScore: 50,
+        categories: ["Erkundung", "Rätsel", "Laufsimulation", "Horror", "Psycho-Horror"]
+    },
+    {
+        title: "Mortal Shell 2",
+        review: '',
+        coverPath: 'img/cover/mortalshell2.jpg',
+        sumPath: 'img/sum/mortalshell2.jpg',
+        tier: 'A',
+        year: '2026',
+        hoursPlayed: '',
+        achievements: '',
+        tierScore: 50,
+        categories: ["Soulslike", "Dark Fantasy", "Gewalt", "Action-Rollenspiel"]
+    },
+    {
+        title: "The Dark Rites of Arkham",
+        review: '',
+        coverPath: 'img/cover/thedarkritesofarkham.jpg',
+        sumPath: 'img/sum/thedarkritesofarkham.jpg',
+        tier: 'D',
+        year: '2026',
+        hoursPlayed: '7',
+        achievements: '30/30',
+        tierScore: 50,
+        categories: ["Abenteuer", "Point-&-Click", "Lovecraft", "Erkundung", "Pixel-Art"]
+    },
+    {
+        title: 'Endacopia', 
+        review: '',
+        coverPath: 'img/cover/endacopia.png', 
+        sumPath: 'img/sum/endacopia.jpg', 
+        tier: 'B',
+        year: '2026',
+        hoursPlayed: 7.6,
+        achievements: '5/16',
+        tierScore: 50,
+        categories: ["Point-&-Click", "Abenteuer", "Pyscho-Horror", "Horror", "Surreal"]
+    },
+    {
+        title: 'Sherlock Holmes: The Awakened', 
+        review: '',
+        coverPath: 'img/cover/sherlockholmestheawakened.jpg', 
+        sumPath: 'img/sum/sherlockholmestheawakened.jpg', 
+        tier: 'DNF',
+        year: '2026',
+        hoursPlayed: 0,
+        achievements: '/28',
+        tierScore: 50,
+        categories: ['Detektiv', 'Komplexe Handlung', 'Lovecraft', 'Mystery', 'Horror']
+    },*/
+];
 
-    addGame(
-        'The Drifter',
-        'Empfehlung eines Arbeitskollegen, noch nicht zu gekommen',
-        'img/cover/thedrifter.png',
-        'img/sum/thedrifter.png',
-        'DNF',
-        '2026'
-    )
+window.onload = function() {
+    // 1. Sort the games dynamically based on tierScore (Highest to Lowest)
+    myGamesList.sort((a, b) => b.tierScore - a.tierScore);
 
-    addGame(
-        'SANABI',
-        'Habe lange zwischen S & A geschwankt, aber die Story hat mich komplett mitgenommen. Selten, dass man bei High-Intensity Platformer Games weinen muss. Das Gameplay macht krass süchtig, das Platforming ist extrem gut umgesetzt und ich könnte den ganzen Tag weitere Levlels spielen. Die Story, die ich anfangs ehrlicherweise als Unterbrechung des Gameplays wahrgenommen habe, hat mich doch recht schnell abgeholt. Die Dynamik zwischen dem Hauptcharakter und Mari ist fantastisch, unterhaltsam und lieb. Mari selbst ist fantastisch geschrieben. Ihre Energie war erfrischend und die Backstory während des Spiels zu entdecken hat ihr nochmal so viel verdiente Tiefe gegeben. Das Ende des Spiels hab ich ein bisschen kommen sehen, aber nicht im Sinne "Vorhersehbar", sondern eher Kategorie "Gutes Foreshadowing, fantastische Resolution". Wärs nicht Cyberpunk, hätte ich es wohl aber in A gepackt lul',
-        'img/cover/sanabi.jpg',
-        'img/sum/sanabi.jpg',
-        'S',
-        '2025',
-        '14.2h',
-        '14/21'
-    )
-
-    addGame(
-        'Mouthwashing',
-        '',
-        'img/cover/mouthwashing.jpg',
-        'img/sum/mouthwashing.jpg',
-        'B',
-        '2026',
-        '3.8h',
-        '17/18'
-    )
-
-    addGame(
-        'Lies of P',
-        '',
-        'img/cover/liesofp.jpg',
-        'img/sum/liesofp.jpg',
-        'DNF',
-        '2026'
-    )
-
-    addGame(
-        'Katana ZERO',
-        '',
-        'img/cover/katanazero.jpg',
-        'img/sum/katanazero.jpg',
-        'DNF',
-        '2026'
-    )
-
-    addGame(
-        'Look Outside',
-        '',
-        'img/cover/lookoutside.png',
-        'img/sum/lookoutside.png',
-        'DNF',
-        '2026'
-    )
-
-    addGame(
-        'Ghostrunner',
-        '',
-        'img/cover/ghostrunner.jpg',
-        'img/sum/ghostrunner.jpg',
-        'B',
-        '2026'
-    )
-
-    addGame(
-        'SCREAMER',
-        '',
-        'img/cover/screamer.jpg',
-        'img/sum/screamer.jpg',
-        'DNF',
-        '2026'
-    )
-
-    addGame(
-        'Cairn',
-        '',
-        'img/cover/cairn.jpg',
-        'img/sum/cairn.jpg',
-        'DNF',
-        '2026'
-    )
-
-    addGame(
-        'Nivalis',
-        '',
-        'img/cover/nivalis.jpg',
-        'img/sum/nivalis.jpg',
-        'DNF',
-        '2026'
-    )
-
-    addGame(
-        'Lunacid',
-        '',
-        'img/cover/lunacid.jpg',
-        'img/sum/lunacid.jpg',
-        'DNF',
-        '2026'
-    )
-
-    addGame(
-        'MIO: Memories in Orbit',
-        '',
-        'img/cover/miomemoriesinorbit.jpg',
-        'img/sum/miomemoriesinorbit.jpg',
-        'DNF',
-        '2026'
-    )
-
-    addGame(
-        'Pacific Drive',
-        '',
-        'img/cover/pacificdrive.jpg',
-        'img/sum/pacificdrive.jpg',
-        'DNF',
-        '2026'
-    )
-
-    addGame(
-        'Absolum',
-        '',
-        'img/cover/absolum.jpg',
-        'img/sum/absolum.jpg',
-        'DNF',
-        '2026'
-    )
-
-    addGame(
-        'Scarlet Hollow',
-        '',
-        'img/cover/scarlethollow.jpg',
-        'img/sum/scarlethollow.jpg',
-        'A',
-        '2026'
-    )
-
-    addGame(
-        'Kingdom Come: Deliverance 2',
-        '',
-        'img/cover/kingdomcomedeliverance2.jpg',
-        'img/sum/kingdomcomedeliverance2.jpg',
-        'DNF',
-        '2026'
-    )
-
-    addGame(
-        'SOMA',
-        '',
-        'img/cover/soma.jpg',
-        'img/sum/soma.jpg',
-        'DNF',
-        '2026'
-    )
-
-    addGame(
-        'THe Sinking City Remastered',
-        '',
-        'img/cover/thesinkingcity.jpg',
-        'img/sum/thesinkingcity.jpg',
-        'DNF',
-        '2026'
-    )
-
-    addGame(
-        'Unsighted',
-        '',
-        'img/cover/unsighted.jpg',
-        'img/sum/unsighted.jpg',
-        'DNF',
-        '2026'
-    )
-
-    addGame(
-        'Mark of The Ninja Remastered',
-        '',
-        'img/cover/markoftheninja.jpg',
-        'img/sum/markoftheninja.jpg',
-        'DNF',
-        '2026'
-    )
-    */
-};
+    // 2. Loop through the array and render them
+    myGamesList.forEach(game => {
+        addGame(
+            game.title,
+            game.review,
+            game.coverPath,
+            game.sumPath,
+            game.tier,
+            game.year,
+            game.hoursPlayed,
+            game.achievements
+        );
+    })
+}

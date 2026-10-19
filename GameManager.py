@@ -14,7 +14,7 @@ class GameAdderApp:
     def __init__(self, root):
         self.root = root
         self.root.title("Tyll's Tier List Manager")
-        self.root.geometry("600x750")
+        self.root.geometry("600x850")
         
         # Styles
         style = ttk.Style()
@@ -41,44 +41,54 @@ class GameAdderApp:
         self.combo_tier = ttk.Combobox(main_frame, values=["S", "A", "B", "C", "D", "F", "DNF"], width=37)
         self.combo_tier.set("B")
         self.combo_tier.grid(row=2, column=1, sticky="w", pady=5)
+        
+        # Tier Score
+        ttk.Label(main_frame, text="Tier Score (e.g. 85):").grid(row=3, column=0, sticky="w", pady=5)
+        self.entry_tierscore = ttk.Entry(main_frame, width=40)
+        self.entry_tierscore.grid(row=3, column=1, sticky="w", pady=5)
 
         # Playtime
-        ttk.Label(main_frame, text="Playtime (e.g. 3.5h):").grid(row=3, column=0, sticky="w", pady=5)
+        ttk.Label(main_frame, text="Playtime Hours (e.g. 101.5):").grid(row=4, column=0, sticky="w", pady=5)
         self.entry_time = ttk.Entry(main_frame, width=40)
-        self.entry_time.grid(row=3, column=1, sticky="w", pady=5)
+        self.entry_time.grid(row=4, column=1, sticky="w", pady=5)
 
         # Achievements
-        ttk.Label(main_frame, text="Achievements (e.g. 15/20):").grid(row=4, column=0, sticky="w", pady=5)
+        ttk.Label(main_frame, text="Achievements (e.g. 62/63):").grid(row=5, column=0, sticky="w", pady=5)
         self.entry_achievements = ttk.Entry(main_frame, width=40)
-        self.entry_achievements.grid(row=4, column=1, sticky="w", pady=5)
+        self.entry_achievements.grid(row=5, column=1, sticky="w", pady=5)
+        
+        # Categories
+        ttk.Label(main_frame, text="Categories (comma separated):").grid(row=6, column=0, sticky="w", pady=5)
+        self.entry_categories = ttk.Entry(main_frame, width=40)
+        self.entry_categories.grid(row=6, column=1, sticky="w", pady=5)
 
         # Images
-        ttk.Separator(main_frame, orient='horizontal').grid(row=5, column=0, columnspan=2, sticky="ew", pady=15)
+        ttk.Separator(main_frame, orient='horizontal').grid(row=7, column=0, columnspan=2, sticky="ew", pady=15)
         
         self.cover_path_var = tk.StringVar()
         self.sum_path_var = tk.StringVar()
 
-        ttk.Button(main_frame, text="Select Cover Image (Small)", command=self.select_cover).grid(row=6, column=0, sticky="w", pady=5)
+        ttk.Button(main_frame, text="Select Cover Image (Small)", command=self.select_cover).grid(row=8, column=0, sticky="w", pady=5)
         self.lbl_cover = ttk.Label(main_frame, text="No file selected", foreground="gray")
-        self.lbl_cover.grid(row=6, column=1, sticky="w")
+        self.lbl_cover.grid(row=8, column=1, sticky="w")
 
-        ttk.Button(main_frame, text="Select Summary Image (Big)", command=self.select_sum).grid(row=7, column=0, sticky="w", pady=5)
+        ttk.Button(main_frame, text="Select Summary Image (Big)", command=self.select_sum).grid(row=9, column=0, sticky="w", pady=5)
         self.lbl_sum = ttk.Label(main_frame, text="No file selected", foreground="gray")
-        self.lbl_sum.grid(row=7, column=1, sticky="w")
+        self.lbl_sum.grid(row=9, column=1, sticky="w")
         
         # Generated Filename Preview
-        ttk.Label(main_frame, text="Will be saved as:").grid(row=8, column=0, sticky="w", pady=5)
+        ttk.Label(main_frame, text="Will be saved as:").grid(row=10, column=0, sticky="w", pady=5)
         self.lbl_filename_preview = ttk.Label(main_frame, text="...", font=("Courier", 10))
-        self.lbl_filename_preview.grid(row=8, column=1, sticky="w")
+        self.lbl_filename_preview.grid(row=10, column=1, sticky="w")
 
         # Summary Text
-        ttk.Separator(main_frame, orient='horizontal').grid(row=9, column=0, columnspan=2, sticky="ew", pady=15)
-        ttk.Label(main_frame, text="Review / Description:").grid(row=10, column=0, sticky="nw", pady=5)
+        ttk.Separator(main_frame, orient='horizontal').grid(row=11, column=0, columnspan=2, sticky="ew", pady=15)
+        ttk.Label(main_frame, text="Review / Description:").grid(row=12, column=0, sticky="nw", pady=5)
         self.text_summary = tk.Text(main_frame, height=10, width=50)
-        self.text_summary.grid(row=10, column=1, sticky="w", pady=5)
+        self.text_summary.grid(row=12, column=1, sticky="w", pady=5)
         
         # Submit
-        ttk.Button(main_frame, text="ADD GAME TO WEBSITE", command=self.process_game).grid(row=11, column=0, columnspan=2, pady=20, ipadx=20, ipady=10)
+        ttk.Button(main_frame, text="ADD GAME TO WEBSITE", command=self.process_game).grid(row=13, column=0, columnspan=2, pady=20, ipadx=20, ipady=10)
 
     def update_filenames(self, event=None):
         title = self.entry_title.get()
@@ -117,11 +127,18 @@ class GameAdderApp:
         
         year = self.combo_year.get()
         tier = self.combo_tier.get()
-        playtime = self.entry_time.get()
-        achievements = self.entry_achievements.get()
+        
+        # Ensure numbers fallback cleanly if left empty
+        tier_score = self.entry_tierscore.get().strip() or "0"
+        playtime = self.entry_time.get().strip() or "0"
+        achievements = self.entry_achievements.get().strip()
+        
+        # Parse categories into a formatted JS array string
+        raw_categories = self.entry_categories.get()
+        category_list = [c.strip() for c in raw_categories.split(',')] if raw_categories else []
+        formatted_categories = ", ".join([f"'{c}'" for c in category_list if c])
 
         # 3. Handle Images
-        # Determine extension based on source file (default to jpg if unsure, but keep original ext)
         cover_src = self.cover_path_var.get()
         sum_src = self.sum_path_var.get()
         
@@ -151,26 +168,25 @@ class GameAdderApp:
                 return
 
         # 4. Generate JS Code
-        # We assume standard paths: img/cover/name.jpg
         cover_js_path = f"img/cover/{cover_filename}" if cover_filename else ""
         sum_js_path = f"img/sum/{sum_filename}" if sum_filename else ""
 
-        # Format the arguments. 
-        # Note: We escape single quotes in title/summary to prevent JS errors
         safe_title = title.replace("'", "\\'")
         safe_summary = summary_html.replace("'", "\\'")
         
-        new_entry = f"""
-    addGame(
-        '{safe_title}',
-        '{safe_summary}',
-        '{cover_js_path}',
-        '{sum_js_path}',
-        '{tier}',
-        '{year}',
-        '{playtime}',
-        '{achievements}'
-    );
+        # Generate object format
+        new_entry = f"""    {{
+        title: '{safe_title}', 
+        review: '{safe_summary}',
+        coverPath: '{cover_js_path}', 
+        sumPath: '{sum_js_path}', 
+        tier: '{tier}',
+        year: '{year}',
+        hoursPlayed: {playtime},
+        achievements: '{achievements}',
+        tierScore: {tier_score},
+        categories: [{formatted_categories}]
+    }},
 """
 
         # 5. Append to File
@@ -182,15 +198,20 @@ class GameAdderApp:
             with open(JS_FILE_PATH, "r", encoding='utf-8') as f:
                 content = f.read()
 
-            # Logic: Find the very last "};" and insert before it
-            # We look for the last occurrence of "};"
-            last_bracket_index = content.rfind("};")
+            # Logic: Find the very last "];" closing the array
+            last_bracket_index = content.rfind("];")
             
             if last_bracket_index == -1:
-                messagebox.showerror("Error", "Could not find closing '};' in gameSetup.js")
+                messagebox.showerror("Error", "Could not find closing '];' in gameSetup.js. Ensure the array is closed properly.")
                 return
 
-            new_content = content[:last_bracket_index] + new_entry + content[last_bracket_index:]
+            # Check if the text right before our insertion point needs a comma
+            text_before_insert = content[:last_bracket_index].rstrip()
+            if text_before_insert.endswith("}"):
+                text_before_insert += ","
+
+            # Combine: everything before + newline + new entry + closing bracket
+            new_content = text_before_insert + "\n" + new_entry + content[last_bracket_index:]
 
             with open(JS_FILE_PATH, "w", encoding='utf-8') as f:
                 f.write(new_content)
@@ -202,6 +223,8 @@ class GameAdderApp:
             self.text_summary.delete("1.0", tk.END)
             self.entry_time.delete(0, tk.END)
             self.entry_achievements.delete(0, tk.END)
+            self.entry_tierscore.delete(0, tk.END)
+            self.entry_categories.delete(0, tk.END)
             self.lbl_cover.config(text="No file selected")
             self.lbl_sum.config(text="No file selected")
             self.cover_path_var.set("")

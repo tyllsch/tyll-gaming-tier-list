@@ -18,7 +18,7 @@ function showSummary(image) {
     const playtime = image.getAttribute('data-playtime');
     if (playtime && playtime !== 'undefined') {
         statPlaytime.style.display = 'inline-block';
-        statPlaytime.textContent = '🕒 ' + playtime;
+        statPlaytime.textContent = '🕒 ' + playtime + 'h';
     } else {
         statPlaytime.style.display = 'none';
     }
@@ -111,6 +111,7 @@ function filterGames(year) {
         }
     });
     window.history.pushState({}, '', '?year=' + year);
+    //updateCategoryChart(year);
 }
 
 window.addEventListener('DOMContentLoaded', () => {
