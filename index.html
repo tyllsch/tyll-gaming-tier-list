@@ -14,10 +14,61 @@
     <body>
         <h1 id="title">Meine Lieblingsspiele</h1>
         <div class="filter-container">
-            <span id="filter-all" class="filter-btn" onclick="filterGames('all', this)">Alle</span>
-            <span id="filter-2024" class="filter-btn" onclick="filterGames('2024', this)">2024</span>
-            <span id="filter-2025" class="filter-btn" onclick="filterGames('2025', this)">2025</span>
-            <span id="filter-2026" class="filter-btn" onclick="filterGames('2026', this)">2026</span>
+            <div class="year-filters">
+                <span id="filter-all" class="filter-btn active" onclick="filterGames('all', this)">Alle</span>
+                <span id="filter-2024" class="filter-btn" onclick="filterGames('2024', this)">2024</span>
+                <span id="filter-2025" class="filter-btn" onclick="filterGames('2025', this)">2025</span>
+                <span id="filter-2026" class="filter-btn" onclick="filterGames('2026', this)">2026</span>
+            </div>
+            <div class="genre-filter-wrapper" id="genre-filter-wrapper">
+                <button type="button" id="genre-filter-toggle" class="filter-btn genre-filter-btn" aria-haspopup="listbox" aria-expanded="false">
+                    <span id="genre-filter-label">🏷️ Alle Genres</span>
+                    <span class="genre-dropdown-arrow">▼</span>
+                </button>
+                <button type="button" id="genre-filter-clear" class="genre-clear-btn" title="Genre-Filter zurücksetzen" style="display: none;">✕</button>
+                <div id="genre-dropdown" class="genre-dropdown" style="display: none;">
+                    <input type="text" id="genre-search-input" class="genre-search-input" placeholder="Genre suchen..." autocomplete="off" />
+                    <div id="genre-options-list" class="genre-options-list" role="listbox"></div>
+                </div>
+            </div>
+            <div class="toolbar-controls">
+                <select id="sort-select" class="filter-btn sort-select" aria-label="Sortierung innerhalb der Tiers" onchange="sortGames(this.value)">
+                    <option value="score">↕️ Score</option>
+                    <option value="playtime">🕒 Spielzeit</option>
+                    <option value="achievements">🏆 100% / %</option>
+                    <option value="title">🔤 A–Z</option>
+                </select>
+                <button type="button" id="stats-toggle" class="filter-btn stats-toggle-btn" aria-expanded="false" onclick="toggleStatsPanel()">
+                    📊 Stats
+                </button>
+            </div>
+        </div>
+        <div id="stats-panel" class="containers stats-panel" style="display: none;">
+            <div class="stats-header">
+                <span id="stats-context" class="stats-context">📊 Statistiken</span>
+                <button type="button" class="stats-close-btn" onclick="toggleStatsPanel(false)" title="Statistiken schließen">✕</button>
+            </div>
+            <div id="stats-kpis" class="stats-kpis"></div>
+            <div class="stats-charts-grid">
+                <div class="stats-card">
+                    <h3 class="stats-card-title">Tier-Verteilung</h3>
+                    <div id="stats-tier-chart" class="stats-bar-chart"></div>
+                </div>
+                <div class="stats-card">
+                    <h3 class="stats-card-title" id="stats-genre-chart-title">Top Genres</h3>
+                    <div id="stats-genre-chart" class="stats-bar-chart"></div>
+                </div>
+            </div>
+            <div class="stats-charts-grid stats-rankings-grid">
+                <div class="stats-card">
+                    <h3 class="stats-card-title" id="stats-best-genres-title">🏆 Beste Genres</h3>
+                    <div id="stats-best-genres" class="stats-ranking-list"></div>
+                </div>
+                <div class="stats-card">
+                    <h3 class="stats-card-title" id="stats-worst-genres-title">📉 Niedrigste Genres</h3>
+                    <div id="stats-worst-genres" class="stats-ranking-list"></div>
+                </div>
+            </div>
         </div>
         <div id="board" class="containers">
             <div class="row">
@@ -56,6 +107,7 @@
                 <span id="stat-playtime" class="stat-box"></span>
                 <span id="stat-achievements" class="stat-box"></span>
             </div>
+            <div id="summary-genres"></div>
             <p id="summary-text" style="margin-left: 5vw; position: relative; z-index: 1;"></p>
         </div>
 	    <script src="src/gameFunctions.js"></script>
